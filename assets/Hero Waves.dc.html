@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/de-felice-lab-design-system-162ea992-121b-4e6f-b566-f6ee701ffd22/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/de-felice-lab-design-system-162ea992-121b-4e6f-b566-f6ee701ffd22/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/de-felice-lab-design-system-162ea992-121b-4e6f-b566-f6ee701ffd22/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/de-felice-lab-design-system-162ea992-121b-4e6f-b566-f6ee701ffd22/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/de-felice-lab-design-system-162ea992-121b-4e6f-b566-f6ee701ffd22/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/de-felice-lab-design-system-162ea992-121b-4e6f-b566-f6ee701ffd22/tokens/base.css">
+  <link rel="stylesheet" href="_ds/de-felice-lab-design-system-162ea992-121b-4e6f-b566-f6ee701ffd22/styles.css">
+  <script src="_ds/de-felice-lab-design-system-162ea992-121b-4e6f-b566-f6ee701ffd22/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; background: var(--color-bg-page, #fff); }
+    a { color: #3B47D6; } a:hover { color: #1D1B80; }
+  </style>
+</helmet>
+<div ref="{{ rootRef }}" data-screen-label="Hero waves" data-om-exportable-video-with-duration-secs="{{ exportDur }}" style="position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #1B2A86;">
+  <canvas ref="{{ canvasRef }}" style="position: absolute; inset: 0; width: 100%; height: 100%; display: block;"></canvas>
+  <sc-if value="{{ showContent }}" hint-placeholder-val="{{ true }}">
+    <div style="position: absolute; inset: 0; background: linear-gradient(100deg, rgba(17,17,76,0.60) 0%, rgba(17,17,76,0.28) 48%, rgba(17,17,76,0) 78%);"></div>
+    <div style="position: absolute; inset: 0; container-type: size; display: flex; flex-direction: column; justify-content: space-between; padding: 4.5% 5.5%;">
+      <img src="assets/logo-lockup-white.svg" alt="De Felice Lab — LInDA" style="width: 16cqw; min-width: 120px; align-self: flex-start;">
+      <div style="display: flex; flex-direction: column; gap: 1.8cqw; max-width: 56cqw; padding-bottom: 1.5%;">
+        <div style="font-family: Jost, sans-serif; font-weight: 600; font-size: clamp(11px, 1.3cqw, 16px); letter-spacing: 0.12em; text-transform: uppercase; color: #97A7CC;">De Felice Lab · UFRJ &amp; Queen's University</div>
+        <h1 style="margin: 0; font-family: Oswald, sans-serif; font-weight: 600; font-size: clamp(28px, 4.6cqw, 76px); line-height: 1.08; letter-spacing: -0.01em; color: #FFFFFF; text-wrap: pretty;">Lighting the way in neurodegeneration</h1>
+        <p style="margin: 0; font-family: Jost, sans-serif; font-size: clamp(13px, 1.7cqw, 24px); line-height: 1.5; color: rgba(255,255,255,0.85); max-width: 46cqw; text-wrap: pretty;">We investigate the molecular origins of Alzheimer's disease — connecting mechanism to measurable clinical change.</p>
+        <div style="display: flex; gap: 14px; margin-top: 0.5cqw;">
+          <x-import component-from-global-scope="DeFeliceLabDesignSystem_162ea9.Button" variant="secondary" hint-size="auto,44px">Explore our research</x-import>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:720},&quot;intensity&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0.2,&quot;max&quot;:2,&quot;step&quot;:0.1,&quot;section&quot;:&quot;Waves&quot;},&quot;pace&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;default&quot;,&quot;options&quot;:[&quot;calm&quot;,&quot;default&quot;,&quot;brisk&quot;],&quot;section&quot;:&quot;Waves&quot;},&quot;showContent&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;section&quot;:&quot;Hero content&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.rootRef = React.createRef();
+    this.canvasRef = React.createRef();
+    this.phase = 0;          // normalized 0..1 loop position
+    this.lastNow = null;
+    this.lastSeekAt = 0;
+    this.texReady = false;
+  }
+  period() {
+    const pace = this.props.pace ?? 'default';
+    return pace === 'calm' ? 24 : pace === 'brisk' ? 10 : 16;
+  }
+  renderVals() {
+    return {
+      rootRef: this.rootRef,
+      canvasRef: this.canvasRef,
+      showContent: this.props.showContent ?? true,
+      exportDur: this.period()
+    };
+  }
+  componentDidMount() {
+    this.initGL();
+    const root = this.rootRef.current;
+    if (root) root.addEventListener('data-om-seek-to-time-frame', (e) => {
+      const t = (e.detail && e.detail.time) || 0;
+      this.phase = (t / this.period()) % 1;
+      this.lastSeekAt = performance.now();
+      this.lastNow = null;
+      this.draw();
+    });
+    this.raf = requestAnimationFrame(this.tick);
+  }
+  componentWillUnmount() { cancelAnimationFrame(this.raf); }
+  tick = (now) => {
+    this.raf = requestAnimationFrame(this.tick);
+    if (now - this.lastSeekAt < 600) { this.lastNow = null; return; } // held by an export/scrub seek
+    if (this.lastNow != null) {
+      this.phase = (this.phase + (now - this.lastNow) / 1000 / this.period()) % 1;
+    }
+    this.lastNow = now;
+    this.draw();
+  };
+  initGL() {
+    const canvas = this.canvasRef.current;
+    const gl = canvas.getContext('webgl', { antialias: false, alpha: false });
+    if (!gl) return;
+    this.gl = gl;
+    const vs = `attribute vec2 aPos; varying vec2 vUv;
+      void main(){ vUv = aPos * 0.5 + 0.5; gl_Position = vec4(aPos, 0.0, 1.0); }`;
+    const fs = `precision highp float;
+      varying vec2 vUv;
+      uniform sampler2D uTex;
+      uniform float uT;    // 0..1 loop phase
+      uniform float uAmp;  // intensity
+      uniform float uAspect;
+      #define TAU 6.28318530718
+      void main(){
+        vec2 uv = vec2(vUv.x, 1.0 - vUv.y);
+        float t = uT * TAU;
+        // Three folds traveling left -> right; integer temporal cycles => seamless loop
+        float P1 = uv.x * TAU * 0.9  - uv.y * TAU * 0.25 - t * 1.0 + 0.5;
+        float P2 = uv.x * TAU * 1.7  + uv.y * TAU * 0.45 - t * 2.0 + 2.1;
+        float P3 = uv.x * TAU * 2.6  - uv.y * TAU * 0.7  - t * 3.0 + 4.2;
+        float h    = 0.55 * sin(P1) + 0.30 * sin(P2) + 0.18 * sin(P3);
+        float dhdx = 0.55 * 0.9 * cos(P1) + 0.30 * 1.7 * cos(P2) + 0.18 * 2.6 * cos(P3);
+        float dhdy = 0.55 * (-0.25) * cos(P1) + 0.30 * 0.45 * cos(P2) + 0.18 * (-0.7) * cos(P3);
+        // UV displacement (fabric ripple)
+        vec2 duv = vec2(dhdx, dhdy) * 0.016 * uAmp + vec2(0.0, h * 0.018 * uAmp);
+        vec2 suv = abs(fract((uv + duv) * 0.5) * 2.0 - 1.0); // mirrored repeat, seam-free
+        vec3 col = texture2D(uTex, suv).rgb;
+        // fold shading + broad traveling bands
+        float shade = 1.0 + dhdx * 0.16 * uAmp + h * 0.055 * uAmp;
+        col *= shade;
+        // satin sheen along the leading edge of the main fold
+        float sheen = pow(max(0.0, cos(P1)), 10.0);
+        col += vec3(0.07, 0.09, 0.22) * sheen * 0.30 * uAmp;
+        // gentle vignette
+        vec2 c = (uv - 0.5) * vec2(uAspect, 1.0);
+        col *= 1.0 - 0.16 * dot(c, c);
+        gl_FragColor = vec4(col, 1.0);
+      }`;
+    const prog = gl.createProgram();
+    for (const [type, src] of [[gl.VERTEX_SHADER, vs], [gl.FRAGMENT_SHADER, fs]]) {
+      const sh = gl.createShader(type);
+      gl.shaderSource(sh, src); gl.compileShader(sh);
+      if (!gl.getShaderParameter(sh, gl.COMPILE_STATUS)) console.error(gl.getShaderInfoLog(sh));
+      gl.attachShader(prog, sh);
+    }
+    gl.linkProgram(prog); gl.useProgram(prog);
+    this.prog = prog;
+    const buf = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+    const loc = gl.getAttribLocation(prog, 'aPos');
+    gl.enableVertexAttribArray(loc);
+    gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+    this.uT = gl.getUniformLocation(prog, 'uT');
+    this.uAmp = gl.getUniformLocation(prog, 'uAmp');
+    this.uAspect = gl.getUniformLocation(prog, 'uAspect');
+    const tex = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, 1, 1, 0, gl.RGB, gl.UNSIGNED_BYTE, new Uint8Array([27, 42, 134]));
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    const img = new Image();
+    img.onload = () => {
+      gl.bindTexture(gl.TEXTURE_2D, tex);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, img);
+      this.texReady = true;
+      this.draw();
+    };
+    img.src = 'uploads/logosDeFeliceLab horizontal.png';
+  }
+  draw() {
+    const gl = this.gl, canvas = this.canvasRef.current;
+    if (!gl || !canvas) return;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const w = Math.round(canvas.clientWidth * dpr), hpx = Math.round(canvas.clientHeight * dpr);
+    if (w && hpx && (canvas.width !== w || canvas.height !== hpx)) {
+      canvas.width = w; canvas.height = hpx;
+      gl.viewport(0, 0, w, hpx);
+    }
+    gl.uniform1f(this.uT, this.phase);
+    gl.uniform1f(this.uAmp, this.props.intensity ?? 1);
+    gl.uniform1f(this.uAspect, w / Math.max(1, hpx));
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+  }
+}
+</script>
+</body>
+</html>
