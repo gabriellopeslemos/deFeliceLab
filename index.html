@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>De Felice Lab — From the whole body to the single gene</title>
-<meta name="description" content="De Felice Lab (Queen's University, Kingston) studies neurodegeneration across every scale: discovering what modifies the brain, measuring it non-invasively in blood, and proving causality at the gene.">
+<title data-i18n="pageTitle">De Felice Lab — From the whole body to the single gene</title>
+<meta name="description" content="De Felice Lab (Queen's University, Kingston) studies neurodegeneration across every scale: discovering what modifies the brain, measuring it non-invasively in blood, and proving causality at the gene." data-i18n-attr-content="metaDescription">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -15,14 +15,18 @@
 
 <header class="site-header">
   <a class="brand" href="#top">
-    <img class="brand-mark" src="assets/logoSemTexto.png" alt="De Felice Lab circuit-brain mark" width="38" height="38">
+    <img class="brand-mark" src="assets/logoSemTexto.png" alt="De Felice Lab circuit-brain mark" width="38" height="38" data-i18n-attr-alt="brandMarkAlt">
     <span class="brand-name">De Felice Lab</span>
   </a>
-  <nav class="site-nav" aria-label="Primary">
-    <a href="#cycle">Research</a>
-    <a href="#pubs">Publications</a>
-    <a href="#contact">Contact</a>
-    <a class="btn btn-primary btn-sm" href="study.html">Join our brain health study <span class="arrow" aria-hidden="true">→</span></a>
+  <nav class="site-nav" aria-label="Primary" data-i18n-attr-aria-label="navAriaLabel">
+    <a href="#cycle" data-i18n="navResearch">Research</a>
+    <a href="#pubs" data-i18n="navPubs">Publications</a>
+    <a href="#contact" data-i18n="navContact">Contact</a>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+    <a class="btn btn-primary btn-sm" href="study.html" data-i18n="navCta">Join our brain health study <span class="arrow" aria-hidden="true">→</span></a>
   </nav>
 </header>
 
@@ -35,11 +39,11 @@
       <div class="hero-inner">
         <div class="hero-copy">
           <div class="hero-kicker">De Felice Lab · Queen's University · Kingston, ON</div>
-          <h1>Lighting the Way in Neurodegeneration: Discovering Therapies for Tomorrow</h1>
-          <p class="hero-lead">We discover what modifies the brain, measure it non-invasively in blood, and prove causality at the gene. One research program spanning every scale of neurodegeneration.</p>
+          <h1 data-i18n="heroH1">Lighting the Way in Neurodegeneration: Discovering Therapies for Tomorrow</h1>
+          <p class="hero-lead" data-i18n="heroLead">We discover what modifies the brain, measure it non-invasively in blood, and prove causality at the gene. One research program spanning every scale of neurodegeneration.</p>
           <div class="hero-actions">
-            <a class="btn btn-on-dark" href="#cycle">See how the loop closes <span class="arrow" aria-hidden="true">→</span></a>
-            <a class="btn btn-ghost-dark" href="study.html">Join our brain health study</a>
+            <a class="btn btn-on-dark" href="#cycle" data-i18n="heroCta1">See how the loop closes <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost-dark" href="study.html" data-i18n="heroCta2">Join our brain health study</a>
           </div>
         </div>
       </div>
@@ -47,9 +51,9 @@
 
     <section id="cycle" class="section container">
       <div class="section-intro">
-        <div class="eyebrow">The translational loop</div>
-        <h2>Most labs run one step. We run the whole sequence — and each step feeds the next.</h2>
-        <p>Exercise reshapes the brain. That change shows up as a signal in the blood. Gene editing tells us whether the signal is the cause. Discover, measure, prove — a single closed program.</p>
+        <div class="eyebrow" data-i18n="cycleEyebrow">The translational loop</div>
+        <h2 data-i18n="cycleH2">Most labs run one step. We run the whole sequence — and each step feeds the next.</h2>
+        <p data-i18n="cycleP">Exercise reshapes the brain. That change shows up as a signal in the blood. Gene editing tells us whether the signal is the cause. Discover, measure, prove — a single closed program.</p>
       </div>
 
       <div class="cycle">
@@ -59,48 +63,48 @@
           <article class="cycle-card">
             <div class="cycle-card-head">
               <span class="cycle-num cycle-num--1">01</span>
-              <span class="cycle-tag cycle-tag--1">Discover</span>
+              <span class="cycle-tag cycle-tag--1" data-i18n="cycle1Tag">Discover</span>
             </div>
-            <h3>Exercise &amp; the brain</h3>
-            <p>Our flagship line: how physical exercise remodels neuronal signalling and protects against neurodegeneration — the upstream cause we can actually move.</p>
-            <div class="cycle-card-foot">Whole body → brain</div>
+            <h3 data-i18n="cycle1H3">Exercise &amp; the brain</h3>
+            <p data-i18n="cycle1P">Our flagship line: how physical exercise remodels neuronal signalling and protects against neurodegeneration — the upstream cause we can actually move.</p>
+            <div class="cycle-card-foot" data-i18n="cycle1Foot">Whole body → brain</div>
           </article>
 
           <article class="cycle-card">
             <div class="cycle-card-head">
               <span class="cycle-num cycle-num--2">02</span>
-              <span class="cycle-tag cycle-tag--2">Measure</span>
+              <span class="cycle-tag cycle-tag--2" data-i18n="cycle2Tag">Measure</span>
             </div>
-            <h3>Plasma biomarkers</h3>
-            <p>We read that change without opening the skull — quantifying brain state from a blood draw, so the effect becomes a number you can track over time.</p>
-            <div class="cycle-card-foot">Brain → blood</div>
+            <h3 data-i18n="cycle2H3">Plasma biomarkers</h3>
+            <p data-i18n="cycle2P">We read that change without opening the skull — quantifying brain state from a blood draw, so the effect becomes a number you can track over time.</p>
+            <div class="cycle-card-foot" data-i18n="cycle2Foot">Brain → blood</div>
           </article>
 
           <article class="cycle-card">
             <div class="cycle-card-head">
               <span class="cycle-num cycle-num--3">03</span>
-              <span class="cycle-tag cycle-tag--3">Prove</span>
+              <span class="cycle-tag cycle-tag--3" data-i18n="cycle3Tag">Prove</span>
             </div>
-            <h3>CRISPR gene editing</h3>
-            <p>We edit the target gene to test causality directly — turning a correlation in the blood into a mechanism we can switch on and off at the source.</p>
-            <div class="cycle-card-foot">Blood → gene</div>
+            <h3 data-i18n="cycle3H3">CRISPR gene editing</h3>
+            <p data-i18n="cycle3P">We edit the target gene to test causality directly — turning a correlation in the blood into a mechanism we can switch on and off at the source.</p>
+            <div class="cycle-card-foot" data-i18n="cycle3Foot">Blood → gene</div>
           </article>
 
         </div>
       </div>
     </section>
 
-    <section class="imaging-section" aria-label="Immunofluorescence imaging">
+    <section class="imaging-section" aria-label="Immunofluorescence imaging" data-i18n-attr-aria-label="imagingAriaLabel">
       <div class="imaging-grid">
         <div class="imaging-visual">
           <div class="field-glow" aria-hidden="true"></div>
           <div class="field-stars" aria-hidden="true"></div>
         </div>
         <div class="imaging-copy">
-          <div class="eyebrow eyebrow--inverse">Imaging the loop</div>
-          <h2>The evidence is visible — in the tissue itself.</h2>
-          <p>Immunofluorescence over a dark field is our strongest asset. Cyan and magenta channels resolve where signalling changes, cell by cell — the same molecular events we then track in blood and edit at the gene.</p>
-          <p class="placeholder-note">Placeholder — pending real lab microscopy (AVIF/WebP, explicit dimensions, real alt text).</p>
+          <div class="eyebrow eyebrow--inverse" data-i18n="imagingEyebrow">Imaging the loop</div>
+          <h2 data-i18n="imagingH2">The evidence is visible — in the tissue itself.</h2>
+          <p data-i18n="imagingP">Immunofluorescence over a dark field is our strongest asset. Cyan and magenta channels resolve where signalling changes, cell by cell — the same molecular events we then track in blood and edit at the gene.</p>
+          <p class="placeholder-note" data-i18n="imagingNote">Placeholder — pending real lab microscopy (AVIF/WebP, explicit dimensions, real alt text).</p>
         </div>
       </div>
     </section>
@@ -108,10 +112,10 @@
     <section id="pubs" class="section container">
       <div class="pubs-head">
         <div class="section-intro">
-          <div class="eyebrow">Selected work</div>
-          <h2>Publications that carry the argument.</h2>
+          <div class="eyebrow" data-i18n="pubsEyebrow">Selected work</div>
+          <h2 data-i18n="pubsH2">Publications that carry the argument.</h2>
         </div>
-        <a class="pubs-all-link" href="#">All publications →</a>
+        <a class="pubs-all-link" href="#" data-i18n="pubsAllLink">All publications →</a>
       </div>
 
       <div class="pubs-list">
@@ -119,53 +123,53 @@
         <a class="pub-row" href="#">
           <span class="pub-year">2024</span>
           <span>
-            <span class="pub-tag pub-tag--1">Discover · Exercise</span>
+            <span class="pub-tag pub-tag--1" data-i18n="pubTag1">Discover · Exercise</span>
             <span class="pub-title">Irisin mediates the exercise-induced protection of neuronal signalling in Alzheimer's models</span>
             <span class="pub-byline">De Felice F. G., et al. · <em>Nature Metabolism</em></span>
-            <span class="pub-why">Why it matters — establishes a molecular messenger that carries the benefit of exercise into the brain, the first link of the loop.</span>
+            <span class="pub-why" data-i18n="pubWhy1">Why it matters — establishes a molecular messenger that carries the benefit of exercise into the brain, the first link of the loop.</span>
           </span>
-          <span class="pub-cites">248 cites →</span>
+          <span class="pub-cites" data-i18n="pubCites1">248 cites →</span>
         </a>
 
         <a class="pub-row" href="#">
           <span class="pub-year">2023</span>
           <span>
-            <span class="pub-tag pub-tag--2">Measure · Biomarkers</span>
+            <span class="pub-tag pub-tag--2" data-i18n="pubTag2">Measure · Biomarkers</span>
             <span class="pub-title">Plasma phospho-tau tracks cognitive decline before symptom onset in a Brazilian cohort</span>
             <span class="pub-byline">De Felice F. G., et al. · <em>Alzheimer's &amp; Dementia</em></span>
-            <span class="pub-why">Why it matters — shows a blood test can read brain state early, turning the discovery into something measurable at scale.</span>
+            <span class="pub-why" data-i18n="pubWhy2">Why it matters — shows a blood test can read brain state early, turning the discovery into something measurable at scale.</span>
           </span>
-          <span class="pub-cites">176 cites →</span>
+          <span class="pub-cites" data-i18n="pubCites2">176 cites →</span>
         </a>
 
         <a class="pub-row" href="#">
           <span class="pub-year">2023</span>
           <span>
-            <span class="pub-tag pub-tag--3">Prove · CRISPR</span>
+            <span class="pub-tag pub-tag--3" data-i18n="pubTag3">Prove · CRISPR</span>
             <span class="pub-title">CRISPR knockout of the target receptor abolishes the protective effect in vivo</span>
             <span class="pub-byline">De Felice F. G., et al. · <em>Cell Reports</em></span>
-            <span class="pub-why">Why it matters — edits the gene to prove the biomarker is causal, not just correlated. The loop closes.</span>
+            <span class="pub-why" data-i18n="pubWhy3">Why it matters — edits the gene to prove the biomarker is causal, not just correlated. The loop closes.</span>
           </span>
-          <span class="pub-cites">92 cites →</span>
+          <span class="pub-cites" data-i18n="pubCites3">92 cites →</span>
         </a>
 
         <a class="pub-row" href="#">
           <span class="pub-year">2022</span>
           <span>
-            <span class="pub-tag pub-tag--1">Discover · Exercise</span>
+            <span class="pub-tag pub-tag--1" data-i18n="pubTag1">Discover · Exercise</span>
             <span class="pub-title">Physical activity restores insulin signalling in the hippocampus of aged animals</span>
             <span class="pub-byline">De Felice F. G., et al. · <em>Journal of Neuroscience</em></span>
-            <span class="pub-why">Why it matters — pins down a mechanism connecting metabolic health to memory, grounding the whole-body-to-brain premise.</span>
+            <span class="pub-why" data-i18n="pubWhy4">Why it matters — pins down a mechanism connecting metabolic health to memory, grounding the whole-body-to-brain premise.</span>
           </span>
-          <span class="pub-cites">311 cites →</span>
+          <span class="pub-cites" data-i18n="pubCites4">311 cites →</span>
         </a>
 
       </div>
-      <p class="pubs-source-note">Placeholder entries — production build fetches from OpenAlex and caches results in-repo.</p>
+      <p class="pubs-source-note" data-i18n="pubsSourceNote">Placeholder entries — production build fetches from OpenAlex and caches results in-repo.</p>
     </section>
 
-    <section class="funding-section" aria-label="Funding partners">
-      <div class="eyebrow eyebrow--muted" style="text-align:center;">Supported by · Canada &amp; Brazil</div>
+    <section class="funding-section" aria-label="Funding partners" data-i18n-attr-aria-label="fundingAriaLabel">
+      <div class="eyebrow eyebrow--muted" style="text-align:center;" data-i18n="fundingEyebrow">Supported by · Canada &amp; Brazil</div>
       <div class="funding-grid">
         <span class="funder">CIHR</span>
         <span class="funder">Weston Brain</span>
@@ -176,15 +180,15 @@
         <span class="funder">INNT</span>
         <span class="funder">Alzheimer Soc.</span>
       </div>
-      <p class="placeholder-note placeholder-note--light">Placeholder wordmarks — pending funder logos with real alt text and click-through links.</p>
+      <p class="placeholder-note placeholder-note--light" data-i18n="fundingNote">Placeholder wordmarks — pending funder logos with real alt text and click-through links.</p>
     </section>
 
     <section id="contact" class="contact-section">
       <div class="contact-grid">
         <div>
-          <div class="eyebrow eyebrow--inverse">Contact</div>
-          <h2>Talk to the lab.</h2>
-          <p>For collaborations, press, and study enquiries.</p>
+          <div class="eyebrow eyebrow--inverse" data-i18n="contactEyebrow">Contact</div>
+          <h2 data-i18n="contactH2">Talk to the lab.</h2>
+          <p data-i18n="contactP">For collaborations, press, and study enquiries.</p>
           <address class="contact-address">
             De Felice Lab, Botterell Hall<br>
             18 Stuart Street<br>
@@ -195,25 +199,25 @@
         <form class="contact-form" method="post" action="#">
           <div class="form-row">
             <div>
-              <label class="field-label" for="name">Name</label>
+              <label class="field-label" for="name" data-i18n="formNameLabel">Name</label>
               <input id="name" name="name" type="text" autocomplete="name" required>
             </div>
             <div>
-              <label class="field-label" for="email">Email</label>
+              <label class="field-label" for="email" data-i18n="formEmailLabel">Email</label>
               <input id="email" name="email" type="email" autocomplete="email" required>
             </div>
           </div>
           <div>
-            <label class="field-label" for="message">Message</label>
+            <label class="field-label" for="message" data-i18n="formMessageLabel">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
-          <button class="btn btn-on-dark" type="submit" style="justify-self:start;">Send message <span class="arrow" aria-hidden="true">→</span></button>
+          <button class="btn btn-on-dark" type="submit" style="justify-self:start;" data-i18n="formSubmit">Send message <span class="arrow" aria-hidden="true">→</span></button>
         </form>
       </div>
       <div class="site-footer-bar">
         <div class="site-footer-inner">
           <span class="footer-brand">De Felice Lab</span>
-          <span>Queen's University · Kingston, Ontario · Canada–Brazil</span>
+          <span data-i18n="footerAffiliation">Queen's University · Kingston, Ontario · Canada–Brazil</span>
           <span>© 2026 De Felice Lab</span>
         </div>
       </div>
@@ -342,5 +346,6 @@
   }
 })();
 </script>
+<script src="assets/i18n.js" defer></script>
 </body>
 </html>

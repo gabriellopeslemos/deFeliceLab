@@ -1,0 +1,297 @@
+// De Felice Lab — EN / PT-BR language toggle.
+// Elements opt in with data-i18n="key" (innerHTML swap) or
+// data-i18n-attr-<attrname>="key" (attribute swap, e.g. data-i18n-attr-alt).
+// Selected language persists in localStorage across index.html / study.html.
+(function () {
+  var STORAGE_KEY = 'defelicelab-lang';
+
+  var translations = {
+    en: {
+      pageTitle: "De Felice Lab — From the whole body to the single gene",
+      metaDescription: "De Felice Lab (Queen's University, Kingston) studies neurodegeneration across every scale: discovering what modifies the brain, measuring it non-invasively in blood, and proving causality at the gene.",
+      navAriaLabel: "Primary",
+      navResearch: "Research",
+      navPubs: "Publications",
+      navStudies: "Studies",
+      navContact: "Contact",
+      navCta: 'Join our brain health study <span class="arrow" aria-hidden="true">→</span>',
+      brandMarkAlt: "De Felice Lab circuit-brain mark",
+
+      heroH1: "Lighting the Way in Neurodegeneration: Discovering Therapies for Tomorrow",
+      heroLead: "We discover what modifies the brain, measure it non-invasively in blood, and prove causality at the gene. One research program spanning every scale of neurodegeneration.",
+      heroCta1: 'See how the loop closes <span class="arrow" aria-hidden="true">→</span>',
+      heroCta2: "Join our brain health study",
+
+      cycleEyebrow: "The translational loop",
+      cycleH2: "Most labs run one step. We run the whole sequence — and each step feeds the next.",
+      cycleP: "Exercise reshapes the brain. That change shows up as a signal in the blood. Gene editing tells us whether the signal is the cause. Discover, measure, prove — a single closed program.",
+
+      cycle1Tag: "Discover",
+      cycle1H3: "Exercise &amp; the brain",
+      cycle1P: "Our flagship line: how physical exercise remodels neuronal signalling and protects against neurodegeneration — the upstream cause we can actually move.",
+      cycle1Foot: "Whole body → brain",
+
+      cycle2Tag: "Measure",
+      cycle2H3: "Plasma biomarkers",
+      cycle2P: "We read that change without opening the skull — quantifying brain state from a blood draw, so the effect becomes a number you can track over time.",
+      cycle2Foot: "Brain → blood",
+
+      cycle3Tag: "Prove",
+      cycle3H3: "CRISPR gene editing",
+      cycle3P: "We edit the target gene to test causality directly — turning a correlation in the blood into a mechanism we can switch on and off at the source.",
+      cycle3Foot: "Blood → gene",
+
+      imagingAriaLabel: "Immunofluorescence imaging",
+      imagingEyebrow: "Imaging the loop",
+      imagingH2: "The evidence is visible — in the tissue itself.",
+      imagingP: "Immunofluorescence over a dark field is our strongest asset. Cyan and magenta channels resolve where signalling changes, cell by cell — the same molecular events we then track in blood and edit at the gene.",
+      imagingNote: "Placeholder — pending real lab microscopy (AVIF/WebP, explicit dimensions, real alt text).",
+
+      pubsEyebrow: "Selected work",
+      pubsH2: "Publications that carry the argument.",
+      pubsAllLink: "All publications →",
+      pubTag1: "Discover · Exercise",
+      pubTag2: "Measure · Biomarkers",
+      pubTag3: "Prove · CRISPR",
+      pubWhy1: "Why it matters — establishes a molecular messenger that carries the benefit of exercise into the brain, the first link of the loop.",
+      pubWhy2: "Why it matters — shows a blood test can read brain state early, turning the discovery into something measurable at scale.",
+      pubWhy3: "Why it matters — edits the gene to prove the biomarker is causal, not just correlated. The loop closes.",
+      pubWhy4: "Why it matters — pins down a mechanism connecting metabolic health to memory, grounding the whole-body-to-brain premise.",
+      pubCites1: "248 cites →",
+      pubCites2: "176 cites →",
+      pubCites3: "92 cites →",
+      pubCites4: "311 cites →",
+      pubsSourceNote: "Placeholder entries — production build fetches from OpenAlex and caches results in-repo.",
+
+      fundingAriaLabel: "Funding partners",
+      fundingEyebrow: "Supported by · Canada &amp; Brazil",
+      fundingNote: "Placeholder wordmarks — pending funder logos with real alt text and click-through links.",
+
+      contactEyebrow: "Contact",
+      contactH2: "Talk to the lab.",
+      contactP: "For collaborations, press, and study enquiries.",
+      formNameLabel: "Name",
+      formEmailLabel: "Email",
+      formMessageLabel: "Message",
+      formSubmit: 'Send message <span class="arrow" aria-hidden="true">→</span>',
+
+      footerAffiliation: "Queen's University · Kingston, Ontario · Canada–Brazil",
+
+      studyPageTitle: "Now Recruiting — De Felice Lab Brain Health Studies",
+      studyMetaDescription: "Join a De Felice Lab brain health study in Kingston. We're recruiting adults to help us understand how exercise, blood biomarkers, and everyday health shape memory as we age.",
+      navCtaStudy: 'Join our study <span class="arrow" aria-hidden="true">→</span>',
+
+      studyHeroKicker: "Now recruiting · Kingston, ON",
+      studyHeroH1: "Help us understand how the brain stays sharp.",
+      studyHeroLead: "We're looking for volunteers to join our brain health studies. Each one is a piece of the same question — how exercise, blood, and everyday health shape memory as we age. Hover a study to see what it involves.",
+      studyHeroCta1: 'See if you’re eligible <span class="arrow" aria-hidden="true">→</span>',
+      studyHeroCta2: "About the research",
+      studyTilesAriaLabel: "Studies now recruiting",
+
+      studyTile1Tag: "Discover · Exercise",
+      studyTile1Name: "Exercise &amp; Memory",
+      studyTile1Intro: "A single 90-minute visit pairing light physical activity with short memory activities, measuring how movement changes brain performance. Adults 55+.",
+      studyTile2Tag: "Measure · Biomarkers",
+      studyTile2Name: "Blood &amp; Brain State",
+      studyTile2Intro: "A simple blood draw lets us read brain-health signals without any scan. Your sample helps validate a test that could track memory changes years early.",
+      studyTile3Tag: "Cohort · Longitudinal",
+      studyTile3Name: "Healthy Aging Cohort",
+      studyTile3Intro: "A once-a-year check-in over time, building a Kingston record of how lifestyle and cognition move together. Available in English and Portuguese.",
+
+      applyEyebrow: "Now recruiting",
+      applyH2: "Join our brain health study.",
+      applyP: "We're looking for adults in the Kingston area to help us understand how exercise and everyday health shape memory as we age. Taking part is simple, and your time directly advances the research.",
+      applyStep1: "A short visit at Botterell Hall — no cost to you",
+      applyStep2: "A simple blood draw and memory activities",
+      applyStep3: "Available in English and Portuguese",
+      applyCtaContact: 'Contact the lab <span class="arrow" aria-hidden="true">→</span>',
+      // Shown while the page is in English; switches to Portuguese on click.
+      ctaLangSwitch: "Ver em português",
+
+      studyCardTitle: "What to expect",
+      factTimeLabel: "Time required",
+      factTimeValue: "~90 minutes, once",
+      factWhoLabel: "Who can join",
+      factWhoValue: "Adults 55+",
+      factWhereLabel: "Where",
+      factLangLabel: "Languages"
+    },
+
+    pt: {
+      pageTitle: "De Felice Lab — Do corpo inteiro ao gene único",
+      metaDescription: "O De Felice Lab (Queen's University, Kingston) estuda a neurodegeneração em todas as escalas: descobrindo o que modifica o cérebro, medindo isso de forma não invasiva no sangue e provando causalidade no gene.",
+      navAriaLabel: "Principal",
+      navResearch: "Pesquisa",
+      navPubs: "Publicações",
+      navStudies: "Estudos",
+      navContact: "Contato",
+      navCta: 'Participe do nosso estudo de saúde cerebral <span class="arrow" aria-hidden="true">→</span>',
+      brandMarkAlt: "Marca circuito-cérebro do De Felice Lab",
+
+      heroH1: "Iluminando o Caminho na Neurodegeneração: Descobrindo as Terapias de Amanhã",
+      heroLead: "Descobrimos o que modifica o cérebro, medimos isso de forma não invasiva no sangue e provamos causalidade no gene. Um único programa de pesquisa que percorre todas as escalas da neurodegeneração.",
+      heroCta1: 'Veja como o ciclo se fecha <span class="arrow" aria-hidden="true">→</span>',
+      heroCta2: "Participe do nosso estudo de saúde cerebral",
+
+      cycleEyebrow: "O ciclo translacional",
+      cycleH2: "A maioria dos laboratórios executa uma etapa. Nós executamos a sequência inteira — e cada etapa alimenta a próxima.",
+      cycleP: "O exercício remodela o cérebro. Essa mudança aparece como um sinal no sangue. A edição gênica nos diz se o sinal é a causa. Descobrir, medir, provar — um único programa fechado.",
+
+      cycle1Tag: "Descobrir",
+      cycle1H3: "Exercício e o cérebro",
+      cycle1P: "Nossa linha principal: como o exercício físico remodela a sinalização neuronal e protege contra a neurodegeneração — a causa a montante que de fato podemos modificar.",
+      cycle1Foot: "Corpo inteiro → cérebro",
+
+      cycle2Tag: "Medir",
+      cycle2H3: "Biomarcadores plasmáticos",
+      cycle2P: "Lemos essa mudança sem abrir o crânio — quantificando o estado do cérebro a partir de uma coleta de sangue, para que o efeito vire um número que dá para acompanhar ao longo do tempo.",
+      cycle2Foot: "Cérebro → sangue",
+
+      cycle3Tag: "Provar",
+      cycle3H3: "Edição gênica com CRISPR",
+      cycle3P: "Editamos o gene-alvo para testar a causalidade diretamente — transformando uma correlação no sangue em um mecanismo que podemos ligar e desligar na fonte.",
+      cycle3Foot: "Sangue → gene",
+
+      imagingAriaLabel: "Imagem de imunofluorescência",
+      imagingEyebrow: "Visualizando o ciclo",
+      imagingH2: "A evidência é visível — no próprio tecido.",
+      imagingP: "A imunofluorescência em campo escuro é nosso maior recurso. Os canais ciano e magenta revelam onde a sinalização muda, célula a célula — os mesmos eventos moleculares que depois rastreamos no sangue e editamos no gene.",
+      imagingNote: "Placeholder — aguardando microscopia real do laboratório (AVIF/WebP, dimensões explícitas, alt text real).",
+
+      pubsEyebrow: "Trabalhos selecionados",
+      pubsH2: "Publicações que sustentam o argumento.",
+      pubsAllLink: "Todas as publicações →",
+      pubTag1: "Descobrir · Exercício",
+      pubTag2: "Medir · Biomarcadores",
+      pubTag3: "Provar · CRISPR",
+      pubWhy1: "Por que importa — estabelece um mensageiro molecular que leva o benefício do exercício até o cérebro, o primeiro elo do ciclo.",
+      pubWhy2: "Por que importa — mostra que um exame de sangue consegue ler o estado do cérebro precocemente, transformando a descoberta em algo mensurável em escala.",
+      pubWhy3: "Por que importa — edita o gene para provar que o biomarcador é causal, não apenas correlacionado. O ciclo se fecha.",
+      pubWhy4: "Por que importa — identifica um mecanismo que conecta saúde metabólica à memória, fundamentando a premissa do corpo inteiro ao cérebro.",
+      pubCites1: "248 citações →",
+      pubCites2: "176 citações →",
+      pubCites3: "92 citações →",
+      pubCites4: "311 citações →",
+      pubsSourceNote: "Entradas placeholder — a build de produção busca no OpenAlex e armazena os resultados no repositório.",
+
+      fundingAriaLabel: "Parceiros financiadores",
+      fundingEyebrow: "Apoiado por · Canadá e Brasil",
+      fundingNote: "Wordmarks placeholder — aguardando logos reais dos financiadores com alt text e links.",
+
+      contactEyebrow: "Contato",
+      contactH2: "Fale com o laboratório.",
+      contactP: "Para colaborações, imprensa e dúvidas sobre os estudos.",
+      formNameLabel: "Nome",
+      formEmailLabel: "E-mail",
+      formMessageLabel: "Mensagem",
+      formSubmit: 'Enviar mensagem <span class="arrow" aria-hidden="true">→</span>',
+
+      footerAffiliation: "Queen's University · Kingston, Ontario · Canadá–Brasil",
+
+      studyPageTitle: "Recrutamento Aberto — Estudos de Saúde Cerebral do De Felice Lab",
+      studyMetaDescription: "Participe de um estudo de saúde cerebral do De Felice Lab em Kingston. Estamos recrutando adultos para entender como o exercício, os biomarcadores no sangue e a saúde do dia a dia moldam a memória conforme envelhecemos.",
+      navCtaStudy: 'Participe do nosso estudo <span class="arrow" aria-hidden="true">→</span>',
+
+      studyHeroKicker: "Recrutamento aberto · Kingston, ON",
+      studyHeroH1: "Ajude-nos a entender como o cérebro se mantém afiado.",
+      studyHeroLead: "Estamos procurando voluntários para participar dos nossos estudos de saúde cerebral. Cada um é uma peça da mesma pergunta — como o exercício, o sangue e a saúde do dia a dia moldam a memória conforme envelhecemos. Passe o mouse sobre um estudo para ver o que ele envolve.",
+      studyHeroCta1: 'Veja se você é elegível <span class="arrow" aria-hidden="true">→</span>',
+      studyHeroCta2: "Sobre a pesquisa",
+      studyTilesAriaLabel: "Estudos com recrutamento aberto",
+
+      studyTile1Tag: "Descobrir · Exercício",
+      studyTile1Name: "Exercício e Memória",
+      studyTile1Intro: "Uma única visita de 90 minutos combinando atividade física leve com pequenas atividades de memória, medindo como o movimento muda o desempenho cerebral. Adultos 55+.",
+      studyTile2Tag: "Medir · Biomarcadores",
+      studyTile2Name: "Sangue e Estado Cerebral",
+      studyTile2Intro: "Uma simples coleta de sangue nos permite ler sinais de saúde cerebral sem nenhum exame de imagem. Sua amostra ajuda a validar um teste que pode rastrear mudanças na memória anos antes.",
+      studyTile3Tag: "Coorte · Longitudinal",
+      studyTile3Name: "Coorte de Envelhecimento Saudável",
+      studyTile3Intro: "Um acompanhamento anual ao longo do tempo, construindo um registro em Kingston de como estilo de vida e cognição se movem juntos. Disponível em inglês e português.",
+
+      applyEyebrow: "Recrutamento aberto",
+      applyH2: "Participe do nosso estudo de saúde cerebral.",
+      applyP: "Estamos procurando adultos na região de Kingston para nos ajudar a entender como o exercício e a saúde do dia a dia moldam a memória conforme envelhecemos. Participar é simples, e seu tempo faz a pesquisa avançar diretamente.",
+      applyStep1: "Uma breve visita ao Botterell Hall — sem custo para você",
+      applyStep2: "Uma simples coleta de sangue e atividades de memória",
+      applyStep3: "Disponível em inglês e português",
+      applyCtaContact: 'Fale com o laboratório <span class="arrow" aria-hidden="true">→</span>',
+      // Shown while the page is in Portuguese; switches to English on click.
+      ctaLangSwitch: "View in English",
+
+      studyCardTitle: "O que esperar",
+      factTimeLabel: "Tempo necessário",
+      factTimeValue: "~90 minutos, uma vez",
+      factWhoLabel: "Quem pode participar",
+      factWhoValue: "Adultos 55+",
+      factWhereLabel: "Onde",
+      factLangLabel: "Idiomas"
+    }
+  };
+
+  function getStoredLang() {
+    try {
+      var stored = window.localStorage.getItem(STORAGE_KEY);
+      if (stored === 'en' || stored === 'pt') return stored;
+    } catch (e) {}
+    return 'en';
+  }
+
+  function setStoredLang(lang) {
+    try { window.localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+  }
+
+  var currentLang = 'en';
+
+  function applyLanguage(lang) {
+    if (lang !== 'en' && lang !== 'pt') lang = 'en';
+    currentLang = lang;
+    var dict = translations[lang];
+
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+
+    var nodes = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < nodes.length; i++) {
+      var key = nodes[i].getAttribute('data-i18n');
+      if (dict[key] !== undefined) nodes[i].innerHTML = dict[key];
+    }
+
+    var attrNodes = document.querySelectorAll('*');
+    for (var j = 0; j < attrNodes.length; j++) {
+      var el = attrNodes[j];
+      for (var k = 0; k < el.attributes.length; k++) {
+        var attr = el.attributes[k];
+        if (attr.name.indexOf('data-i18n-attr-') === 0) {
+          var targetAttr = attr.name.slice('data-i18n-attr-'.length);
+          var dictKey = attr.value;
+          if (dict[dictKey] !== undefined) el.setAttribute(targetAttr, dict[dictKey]);
+        }
+      }
+    }
+
+    var toggleButtons = document.querySelectorAll('.lang-btn');
+    for (var b = 0; b < toggleButtons.length; b++) {
+      var isActive = toggleButtons[b].getAttribute('data-lang') === lang;
+      toggleButtons[b].setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    }
+
+    setStoredLang(lang);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    applyLanguage(getStoredLang());
+
+    document.addEventListener('click', function (e) {
+      var toggleBtn = e.target.closest && e.target.closest('.lang-btn');
+      if (toggleBtn) {
+        applyLanguage(toggleBtn.getAttribute('data-lang'));
+        return;
+      }
+      var switchCta = e.target.closest && e.target.closest('#lang-alt-cta');
+      if (switchCta) {
+        e.preventDefault();
+        applyLanguage(currentLang === 'en' ? 'pt' : 'en');
+      }
+    });
+  });
+})();

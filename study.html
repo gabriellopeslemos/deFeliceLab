@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Now Recruiting — De Felice Lab Brain Health Studies</title>
-<meta name="description" content="Join a De Felice Lab brain health study in Kingston. We're recruiting adults to help us understand how exercise, blood biomarkers, and everyday health shape memory as we age.">
+<title data-i18n="studyPageTitle">Now Recruiting — De Felice Lab Brain Health Studies</title>
+<meta name="description" content="Join a De Felice Lab brain health study in Kingston. We're recruiting adults to help us understand how exercise, blood biomarkers, and everyday health shape memory as we age." data-i18n-attr-content="studyMetaDescription">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -15,15 +15,19 @@
 
 <header class="site-header">
   <a class="brand" href="index.html">
-    <img class="brand-mark" src="assets/logoSemTexto.png" alt="De Felice Lab circuit-brain mark" width="38" height="38">
+    <img class="brand-mark" src="assets/logoSemTexto.png" alt="De Felice Lab circuit-brain mark" width="38" height="38" data-i18n-attr-alt="brandMarkAlt">
     <span class="brand-name">De Felice Lab</span>
   </a>
-  <nav class="site-nav" aria-label="Primary">
-    <a href="index.html#cycle">Research</a>
-    <a href="index.html#pubs">Publications</a>
-    <a href="study.html" aria-current="page">Studies</a>
-    <a href="index.html#contact">Contact</a>
-    <a class="btn btn-primary btn-sm" href="#apply">Join our study <span class="arrow" aria-hidden="true">→</span></a>
+  <nav class="site-nav" aria-label="Primary" data-i18n-attr-aria-label="navAriaLabel">
+    <a href="index.html#cycle" data-i18n="navResearch">Research</a>
+    <a href="index.html#pubs" data-i18n="navPubs">Publications</a>
+    <a href="study.html" aria-current="page" data-i18n="navStudies">Studies</a>
+    <a href="index.html#contact" data-i18n="navContact">Contact</a>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+    <a class="btn btn-primary btn-sm" href="#apply" data-i18n="navCtaStudy">Join our study <span class="arrow" aria-hidden="true">→</span></a>
   </nav>
 </header>
 
@@ -35,24 +39,24 @@
       <div class="study-hero-inner">
 
         <div class="study-hero-copy">
-          <div class="hero-kicker">Now recruiting · Kingston, ON</div>
-          <h1>Help us understand how the brain stays sharp.</h1>
-          <p class="study-hero-lead">We're looking for volunteers to join our brain health studies. Each one is a piece of the same question — how exercise, blood, and everyday health shape memory as we age. Hover a study to see what it involves.</p>
+          <div class="hero-kicker" data-i18n="studyHeroKicker">Now recruiting · Kingston, ON</div>
+          <h1 data-i18n="studyHeroH1">Help us understand how the brain stays sharp.</h1>
+          <p class="study-hero-lead" data-i18n="studyHeroLead">We're looking for volunteers to join our brain health studies. Each one is a piece of the same question — how exercise, blood, and everyday health shape memory as we age. Hover a study to see what it involves.</p>
           <div class="study-hero-actions">
-            <a class="btn btn-on-dark" href="#apply">See if you're eligible <span class="arrow" aria-hidden="true">→</span></a>
-            <a class="btn btn-ghost-dark" href="index.html#cycle">About the research</a>
+            <a class="btn btn-on-dark" href="#apply" data-i18n="studyHeroCta1">See if you're eligible <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost-dark" href="index.html#cycle" data-i18n="studyHeroCta2">About the research</a>
           </div>
         </div>
 
-        <div class="study-stack" aria-label="Studies now recruiting">
+        <div class="study-stack" aria-label="Studies now recruiting" data-i18n-attr-aria-label="studyTilesAriaLabel">
 
           <a class="study-tile" href="#apply">
             <span class="study-tile-visual study-tile-visual--1" aria-hidden="true"></span>
             <span class="study-tile-scrim" aria-hidden="true"></span>
             <span class="study-tile-body">
-              <span class="study-tile-tag">Discover · Exercise</span>
-              <span class="study-tile-name">Exercise &amp; Memory</span>
-              <span class="study-tile-intro">A single 90-minute visit pairing light physical activity with short memory activities, measuring how movement changes brain performance. Adults 55+.</span>
+              <span class="study-tile-tag" data-i18n="studyTile1Tag">Discover · Exercise</span>
+              <span class="study-tile-name" data-i18n="studyTile1Name">Exercise &amp; Memory</span>
+              <span class="study-tile-intro" data-i18n="studyTile1Intro">A single 90-minute visit pairing light physical activity with short memory activities, measuring how movement changes brain performance. Adults 55+.</span>
             </span>
           </a>
 
@@ -60,9 +64,9 @@
             <span class="study-tile-visual study-tile-visual--2" aria-hidden="true"></span>
             <span class="study-tile-scrim" aria-hidden="true"></span>
             <span class="study-tile-body">
-              <span class="study-tile-tag">Measure · Biomarkers</span>
-              <span class="study-tile-name">Blood &amp; Brain State</span>
-              <span class="study-tile-intro">A simple blood draw lets us read brain-health signals without any scan. Your sample helps validate a test that could track memory changes years early.</span>
+              <span class="study-tile-tag" data-i18n="studyTile2Tag">Measure · Biomarkers</span>
+              <span class="study-tile-name" data-i18n="studyTile2Name">Blood &amp; Brain State</span>
+              <span class="study-tile-intro" data-i18n="studyTile2Intro">A simple blood draw lets us read brain-health signals without any scan. Your sample helps validate a test that could track memory changes years early.</span>
             </span>
           </a>
 
@@ -70,9 +74,9 @@
             <span class="study-tile-visual study-tile-visual--3" aria-hidden="true"></span>
             <span class="study-tile-scrim" aria-hidden="true"></span>
             <span class="study-tile-body">
-              <span class="study-tile-tag">Cohort · Longitudinal</span>
-              <span class="study-tile-name">Healthy Aging Cohort</span>
-              <span class="study-tile-intro">A once-a-year check-in over time, building a Kingston record of how lifestyle and cognition move together. Available in English and Portuguese.</span>
+              <span class="study-tile-tag" data-i18n="studyTile3Tag">Cohort · Longitudinal</span>
+              <span class="study-tile-name" data-i18n="studyTile3Name">Healthy Aging Cohort</span>
+              <span class="study-tile-intro" data-i18n="studyTile3Intro">A once-a-year check-in over time, building a Kingston record of how lifestyle and cognition move together. Available in English and Portuguese.</span>
             </span>
           </a>
 
@@ -84,26 +88,26 @@
     <section id="apply" class="study-section">
       <div class="study-grid">
         <div>
-          <div class="eyebrow">Now recruiting</div>
-          <h2>Join our brain health study.</h2>
-          <p>We're looking for adults in the Kingston area to help us understand how exercise and everyday health shape memory as we age. Taking part is simple, and your time directly advances the research.</p>
+          <div class="eyebrow" data-i18n="applyEyebrow">Now recruiting</div>
+          <h2 data-i18n="applyH2">Join our brain health study.</h2>
+          <p data-i18n="applyP">We're looking for adults in the Kingston area to help us understand how exercise and everyday health shape memory as we age. Taking part is simple, and your time directly advances the research.</p>
           <ul class="study-steps">
-            <li><span>01</span> A short visit at Botterell Hall — no cost to you</li>
-            <li><span>02</span> A simple blood draw and memory activities</li>
-            <li><span>03</span> Available in English and Portuguese</li>
+            <li><span>01</span> <span data-i18n="applyStep1">A short visit at Botterell Hall — no cost to you</span></li>
+            <li><span>02</span> <span data-i18n="applyStep2">A simple blood draw and memory activities</span></li>
+            <li><span>03</span> <span data-i18n="applyStep3">Available in English and Portuguese</span></li>
           </ul>
           <div class="study-actions">
-            <a class="btn btn-primary" href="index.html#contact">Contact the lab <span class="arrow" aria-hidden="true">→</span></a>
-            <a class="btn btn-outline" href="index.html#contact" lang="pt-BR">Ver em português</a>
+            <a class="btn btn-primary" href="index.html#contact" data-i18n="applyCtaContact">Contact the lab <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-outline" href="index.html#contact" id="lang-alt-cta" data-i18n="ctaLangSwitch">Ver em português</a>
           </div>
         </div>
         <div class="study-card">
-          <div class="study-card-title">What to expect</div>
+          <div class="study-card-title" data-i18n="studyCardTitle">What to expect</div>
           <dl class="study-facts">
-            <div class="study-fact"><dt>Time required</dt><dd>~90 minutes, once</dd></div>
-            <div class="study-fact"><dt>Who can join</dt><dd>Adults 55+</dd></div>
-            <div class="study-fact"><dt>Where</dt><dd>Botterell Hall, Kingston</dd></div>
-            <div class="study-fact"><dt>Languages</dt><dd>EN / PT</dd></div>
+            <div class="study-fact"><dt data-i18n="factTimeLabel">Time required</dt><dd data-i18n="factTimeValue">~90 minutes, once</dd></div>
+            <div class="study-fact"><dt data-i18n="factWhoLabel">Who can join</dt><dd data-i18n="factWhoValue">Adults 55+</dd></div>
+            <div class="study-fact"><dt data-i18n="factWhereLabel">Where</dt><dd>Botterell Hall, Kingston</dd></div>
+            <div class="study-fact"><dt data-i18n="factLangLabel">Languages</dt><dd>EN / PT</dd></div>
           </dl>
         </div>
       </div>
@@ -113,7 +117,7 @@
       <div class="site-footer-bar" style="border-top:none;">
         <div class="site-footer-inner">
           <span class="footer-brand">De Felice Lab</span>
-          <span>Queen's University · Kingston, Ontario · Canada–Brazil</span>
+          <span data-i18n="footerAffiliation">Queen's University · Kingston, Ontario · Canada–Brazil</span>
           <span>© 2026 De Felice Lab</span>
         </div>
       </div>
@@ -122,5 +126,6 @@
   </div>
 </main>
 
+<script src="assets/i18n.js" defer></script>
 </body>
 </html>
