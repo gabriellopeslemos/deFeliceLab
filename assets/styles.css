@@ -143,6 +143,30 @@ img { max-width: 100%; display: block; }
 .site-nav a:not(.btn) { color: var(--text-body); }
 .site-nav a:not(.btn):hover { color: var(--navy-900); }
 
+/* Language toggle */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  background: var(--blue-50);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+}
+.lang-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: .04em;
+}
+.lang-btn:hover { color: var(--navy-900); }
+.lang-btn[aria-pressed="true"] { background: var(--navy-900); color: var(--white); }
+
 /* Buttons */
 .btn {
   display: inline-flex;
