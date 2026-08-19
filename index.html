@@ -21,7 +21,7 @@
   <nav class="site-nav" aria-label="Primary" data-i18n-attr-aria-label="navAriaLabel">
     <a href="#cycle" data-i18n="navResearch">Research</a>
     <a href="#pubs" data-i18n="navPubs">Publications</a>
-    <a href="#contact" data-i18n="navContact">Contact</a>
+    <a href="mailto:lab@defelicelab.com" data-i18n="navContact">Contact</a>
     <div class="lang-toggle" role="group" aria-label="Language">
       <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
       <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
@@ -38,7 +38,7 @@
       <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy">
-          <div class="hero-kicker">De Felice Lab · Queen's University · Kingston, ON</div>
+          <div class="hero-kicker">UFRJ · IDOR · Queen's University</div>
           <h1 data-i18n="heroH1">Lighting the Way in Neurodegeneration: Discovering Therapies for Tomorrow</h1>
           <p class="hero-lead" data-i18n="heroLead">We discover what modifies the brain, measure it non-invasively in blood, and prove causality at the gene. One research program spanning every scale of neurodegeneration.</p>
           <div class="hero-actions">
@@ -115,109 +115,44 @@
           <div class="eyebrow" data-i18n="pubsEyebrow">Selected work</div>
           <h2 data-i18n="pubsH2">Publications that carry the argument.</h2>
         </div>
-        <a class="pubs-all-link" href="#" data-i18n="pubsAllLink">All publications →</a>
+        <a class="pubs-all-link" href="publications.html" data-i18n="pubsAllLink">All publications →</a>
       </div>
 
-      <div class="pubs-list">
-
-        <a class="pub-row" href="#">
-          <span class="pub-year">2024</span>
-          <span>
-            <span class="pub-tag pub-tag--1" data-i18n="pubTag1">Discover · Exercise</span>
-            <span class="pub-title">Irisin mediates the exercise-induced protection of neuronal signalling in Alzheimer's models</span>
-            <span class="pub-byline">De Felice F. G., et al. · <em>Nature Metabolism</em></span>
-            <span class="pub-why" data-i18n="pubWhy1">Why it matters — establishes a molecular messenger that carries the benefit of exercise into the brain, the first link of the loop.</span>
-          </span>
-          <span class="pub-cites" data-i18n="pubCites1">248 cites →</span>
-        </a>
-
-        <a class="pub-row" href="#">
-          <span class="pub-year">2023</span>
-          <span>
-            <span class="pub-tag pub-tag--2" data-i18n="pubTag2">Measure · Biomarkers</span>
-            <span class="pub-title">Plasma phospho-tau tracks cognitive decline before symptom onset in a Brazilian cohort</span>
-            <span class="pub-byline">De Felice F. G., et al. · <em>Alzheimer's &amp; Dementia</em></span>
-            <span class="pub-why" data-i18n="pubWhy2">Why it matters — shows a blood test can read brain state early, turning the discovery into something measurable at scale.</span>
-          </span>
-          <span class="pub-cites" data-i18n="pubCites2">176 cites →</span>
-        </a>
-
-        <a class="pub-row" href="#">
-          <span class="pub-year">2023</span>
-          <span>
-            <span class="pub-tag pub-tag--3" data-i18n="pubTag3">Prove · CRISPR</span>
-            <span class="pub-title">CRISPR knockout of the target receptor abolishes the protective effect in vivo</span>
-            <span class="pub-byline">De Felice F. G., et al. · <em>Cell Reports</em></span>
-            <span class="pub-why" data-i18n="pubWhy3">Why it matters — edits the gene to prove the biomarker is causal, not just correlated. The loop closes.</span>
-          </span>
-          <span class="pub-cites" data-i18n="pubCites3">92 cites →</span>
-        </a>
-
-        <a class="pub-row" href="#">
-          <span class="pub-year">2022</span>
-          <span>
-            <span class="pub-tag pub-tag--1" data-i18n="pubTag1">Discover · Exercise</span>
-            <span class="pub-title">Physical activity restores insulin signalling in the hippocampus of aged animals</span>
-            <span class="pub-byline">De Felice F. G., et al. · <em>Journal of Neuroscience</em></span>
-            <span class="pub-why" data-i18n="pubWhy4">Why it matters — pins down a mechanism connecting metabolic health to memory, grounding the whole-body-to-brain premise.</span>
-          </span>
-          <span class="pub-cites" data-i18n="pubCites4">311 cites →</span>
-        </a>
-
+      <div class="pubs-list" data-pubs-limit="5">
+        <p class="pubs-loading" data-i18n="pubsLoading">Loading publications from ORCID…</p>
       </div>
-      <p class="pubs-source-note" data-i18n="pubsSourceNote">Placeholder entries — production build fetches from OpenAlex and caches results in-repo.</p>
+      
     </section>
 
     <section class="funding-section" aria-label="Funding partners" data-i18n-attr-aria-label="fundingAriaLabel">
-      <div class="eyebrow eyebrow--muted" style="text-align:center;" data-i18n="fundingEyebrow">Supported by · Canada &amp; Brazil</div>
+      <div class="eyebrow eyebrow--muted" style="text-align:center;" data-i18n="fundingEyebrow">Funding</div>
       <div class="funding-grid">
-        <span class="funder">CIHR</span>
-        <span class="funder">Weston Brain</span>
-        <span class="funder">CFI</span>
-        <span class="funder">IDOR</span>
-        <span class="funder">CNPq</span>
-        <span class="funder">FAPERJ</span>
-        <span class="funder">INNT</span>
-        <span class="funder">Alzheimer Soc.</span>
+        <span class="funder"><img src="assets/img/CIHRIRSCLogo.png" alt="CIHR / IRSC"></span>
+        <span class="funder"><img src="assets/img/westonBrainLogo.webp" alt="Weston Brain Institute"></span>
+        <span class="funder"><img src="assets/img/innovationCALogo.png" alt="Canada Foundation for Innovation"></span>
+        <span class="funder"><img src="assets/img/idorLogo.png" alt="IDOR"></span>
+        <span class="funder"><img src="assets/img/CNPqLogo.png" alt="CNPq"></span>
+        <span class="funder"><img src="assets/img/faperjLogo.png" alt="FAPERJ"></span>
+        <span class="funder"><img src="assets/img/inntLogo.png" alt="INNT"></span>
+        <span class="funder"><img src="assets/img/alzheimerSocietyLogo.png" alt="Alzheimer Society"></span>
+        <span class="funder"><img src="assets/img/QueensLogo.png" alt="Queen's University"></span>
       </div>
-      <p class="placeholder-note placeholder-note--light" data-i18n="fundingNote">Placeholder wordmarks — pending funder logos with real alt text and click-through links.</p>
     </section>
 
-    <section id="contact" class="contact-section">
-      <div class="contact-grid">
-        <div>
-          <div class="eyebrow eyebrow--inverse" data-i18n="contactEyebrow">Contact</div>
-          <h2 data-i18n="contactH2">Talk to the lab.</h2>
-          <p data-i18n="contactP">For collaborations, press, and study enquiries.</p>
-          <address class="contact-address">
-            De Felice Lab, Botterell Hall<br>
-            18 Stuart Street<br>
-            Kingston, Ontario · K7L 2V5<br>
-            <a href="mailto:lab@defelicelab.com">lab@defelicelab.com</a>
-          </address>
-        </div>
-        <form class="contact-form" method="post" action="#">
-          <div class="form-row">
-            <div>
-              <label class="field-label" for="name" data-i18n="formNameLabel">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required>
-            </div>
-            <div>
-              <label class="field-label" for="email" data-i18n="formEmailLabel">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
-            </div>
-          </div>
-          <div>
-            <label class="field-label" for="message" data-i18n="formMessageLabel">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button class="btn btn-on-dark" type="submit" style="justify-self:start;" data-i18n="formSubmit">Send message <span class="arrow" aria-hidden="true">→</span></button>
-        </form>
-      </div>
+    <section class="contact-section">
       <div class="site-footer-bar">
         <div class="site-footer-inner">
           <span class="footer-brand">De Felice Lab</span>
-          <span data-i18n="footerAffiliation">Queen's University · Kingston, Ontario · Canada–Brazil</span>
+          <a class="footer-email" href="mailto:lab@defelicelab.com">lab@defelicelab.com</a>
+          <a class="footer-social" href="https://www.instagram.com/defelicelab/" target="_blank" rel="noopener noreferrer" aria-label="Follow De Felice Lab on Instagram">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17.35" cy="6.65" r="1.15" fill="currentColor"/>
+            </svg>
+            <span>Follow us</span>
+          </a>
+          <span class="footer-credit">Made by glldev</span>
           <span>© 2026 De Felice Lab</span>
         </div>
       </div>
@@ -347,5 +282,6 @@
 })();
 </script>
 <script src="assets/i18n.js" defer></script>
+<script src="assets/pubs.js" defer></script>
 </body>
 </html>
