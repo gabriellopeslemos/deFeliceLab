@@ -510,6 +510,12 @@ img { max-width: 100%; display: block; }
   white-space: nowrap;
   padding-top: 4px;
 }
+.pubs-loading {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: var(--gray-400);
+  padding: 28px 4px;
+}
 .pubs-source-note {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 12px;
@@ -603,60 +609,17 @@ img { max-width: 100%; display: block; }
   transition: color .2s;
 }
 .funder:hover, .funder:focus-visible { color: var(--navy-900); }
-
-/* ---------- Contact ---------- */
-.contact-grid {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: clamp(64px, 9vh, 104px) var(--gutter);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: clamp(32px, 5vw, 72px);
+.funder img {
+  max-width: 78%;
+  max-height: 56px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: .72;
+  transition: filter .2s, opacity .2s;
 }
-.contact-grid h2 {
-  font-family: 'Spectral', serif;
-  font-weight: 400;
-  font-size: clamp(28px, 3.6vw, 46px);
-  line-height: 1.08;
-  letter-spacing: -.01em;
-  margin: 0;
-  text-wrap: balance;
-}
-.contact-grid > div:first-child p {
-  font-family: 'Jost', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.6;
-  color: rgba(255,255,255,.78);
-  margin: 22px 0 0;
-  max-width: 44ch;
-}
-.contact-address {
-  margin-top: 32px;
-  font-family: 'Jost', sans-serif;
-  font-size: 17px;
-  line-height: 1.7;
-  color: rgba(255,255,255,.85);
-}
-.contact-address a { color: var(--cyan); }
-
-.contact-form { display: grid; gap: 16px; align-content: start; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.field-label { display: block; margin-bottom: 6px; font-family: 'Jost', sans-serif; font-size: 14px; color: rgba(255,255,255,.75); }
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.22);
-  border-radius: 8px;
-  padding: 14px 16px;
-  color: var(--white);
-  font-family: 'Jost', sans-serif;
-  font-size: 16px;
-}
-.contact-form input::placeholder,
-.contact-form textarea::placeholder { color: rgba(255,255,255,.5); }
-.contact-form textarea { resize: vertical; }
+.funder:hover img, .funder:focus-visible img { filter: grayscale(0%); opacity: 1; }
 
 .site-footer-bar { border-top: 1px solid rgba(255,255,255,.12); }
 .site-footer-inner {
@@ -679,6 +642,22 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   color: rgba(255,255,255,.8);
 }
+.footer-email {
+  color: rgba(255,255,255,.55);
+  text-decoration: none;
+}
+.footer-email:hover { color: rgba(255,255,255,.85); }
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255,255,255,.55);
+  text-decoration: none;
+  transition: color .15s ease;
+}
+.footer-social:hover { color: rgba(255,255,255,.85); }
+.footer-social-icon { width: 17px; height: 17px; flex-shrink: 0; }
+.footer-credit { color: rgba(255,255,255,.4); font-size: 13px; }
 
 /* ---------- Study page: recruiting hero ---------- */
 .site-nav a[aria-current="page"] { color: var(--navy-900); font-weight: 600; }

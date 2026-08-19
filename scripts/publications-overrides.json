@@ -1,0 +1,11 @@
+{
+  "_comment": "Keyed by DOI (lowercase) or, if no DOI, the normalized lowercase title. Each value may set tag, byline, why, cites — all optional. byline defaults to the author list ORCID reports (contributors with a credit-name) joined by commas; set it here only to override/fix that. Example below (remove the leading underscore key when you add real entries).",
+  "_example": {
+    "10.1000/example-doi": {
+      "tag": "Discover · Exercise",
+      "byline": "De Felice F. G., et al.",
+      "why": "Why it matters — one sentence on the finding's significance.",
+      "cites": "248 cites →"
+    }
+  }
+}

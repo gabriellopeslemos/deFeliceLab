@@ -1,0 +1,3 @@
+.env
+.venv/
+scripts/.token_cache.json

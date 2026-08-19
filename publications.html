@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pubsPageTitle">All Publications — De Felice Lab</title>
+<meta name="description" content="The complete, continuously updated list of peer-reviewed publications from the De Felice Lab, fetched from ORCID." data-i18n-attr-content="pubsPageMetaDescription">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img class="brand-mark" src="assets/logoSemTexto.png" alt="De Felice Lab circuit-brain mark" width="38" height="38" data-i18n-attr-alt="brandMarkAlt">
+    <span class="brand-name">De Felice Lab</span>
+  </a>
+  <nav class="site-nav" aria-label="Primary" data-i18n-attr-aria-label="navAriaLabel">
+    <a href="index.html#cycle" data-i18n="navResearch">Research</a>
+    <a href="publications.html" aria-current="page" data-i18n="navPubs">Publications</a>
+    <a href="study.html" data-i18n="navStudies">Studies</a>
+    <a href="mailto:lab@defelicelab.com" data-i18n="navContact">Contact</a>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+    <a class="btn btn-primary btn-sm" href="study.html" data-i18n="navCta">Join our brain health study <span class="arrow" aria-hidden="true">→</span></a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="wrap">
+
+    <section class="section container">
+      <a class="pubs-all-link" href="index.html#pubs" data-i18n="pubsBackLink">← Back to Publications</a>
+      <div class="section-intro" style="margin-top: 18px;">
+        <div class="eyebrow" data-i18n="pubsAllEyebrow">Full record</div>
+        <h2 data-i18n="pubsAllH2">Every publication, in one place.</h2>
+        <p data-i18n="pubsAllP">The complete, continuously updated list of the lab's peer-reviewed work.</p>
+      </div>
+
+      <div class="pubs-list">
+        <p class="pubs-loading" data-i18n="pubsLoading">Loading publications from ORCID…</p>
+      </div>
+      
+    </section>
+
+    <section class="contact-section">
+      <div class="site-footer-bar" style="border-top:none;">
+        <div class="site-footer-inner">
+          <span class="footer-brand">De Felice Lab</span>
+          <a class="footer-email" href="mailto:lab@defelicelab.com">lab@defelicelab.com</a>
+          <a class="footer-social" href="https://www.instagram.com/defelicelab/" target="_blank" rel="noopener noreferrer" aria-label="Follow De Felice Lab on Instagram">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17.35" cy="6.65" r="1.15" fill="currentColor"/>
+            </svg>
+            <span>Follow us</span>
+          </a>
+          <span class="footer-credit">Made by glldev</span>
+          <span>© 2026 De Felice Lab</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<script src="assets/i18n.js" defer></script>
+<script src="assets/pubs.js" defer></script>
+</body>
+</html>
