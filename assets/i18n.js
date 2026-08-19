@@ -11,6 +11,7 @@
       metaDescription: "De Felice Lab (Queen's University, Kingston) studies neurodegeneration across every scale: discovering what modifies the brain, measuring it non-invasively in blood, and proving causality at the gene.",
       navAriaLabel: "Primary",
       navResearch: "Research",
+      navTeam: "Team",
       navPubs: "Publications",
       navStudies: "Studies",
       navContact: "Contact",
@@ -100,7 +101,61 @@
       factWhoLabel: "Who can join",
       factWhoValue: "Adults 55+",
       factWhereLabel: "Where",
-      factLangLabel: "Languages"
+      factLangLabel: "Languages",
+
+      teamPageTitle: "Our Team — De Felice Lab",
+      teamPageMetaDescription: "The people of the De Felice Lab — the principal investigator, research associates, postdoctoral fellows, and graduate and undergraduate students studying neurodegeneration across Canada and Brazil.",
+      teamHeroKicker: "Our lab · Canada &amp; Brazil",
+      teamHeroH1: "The people behind the work.",
+      teamHeroLead: "Molecular biologists, bioinformaticians, clinicians and students spanning Kingston and Rio de Janeiro — each carrying one thread of the same question about how the brain ages.",
+
+      piEyebrow: "Principal investigator",
+      piPortraitNote: "Portrait placeholder",
+      piRole: "Associate Professor · Queen's University — Centre for Neuroscience Studies, and the Departments of Biomedical &amp; Molecular Sciences and Psychiatry.",
+      piBio: "Her work sits at the intersection of Alzheimer's disease and metabolism, with a focus on the links between Alzheimer's, diabetes and inflammation. She studies how hormones act in neurodegeneration and how insulin signalling breaks down in the Alzheimer's brain. Her finding that irisin — an exercise-linked hormone — protects against Alzheimer's has drawn wide interest from scientists and media around the world.",
+      piEducationLabel: "Education",
+      piAffiliationsLabel: "Affiliations",
+
+      teamGroupAssociates: "Research associates",
+      team1Role: "Research Associate",
+      team1Focus: "Molecular mechanisms behind the beneficial effects of exercise on Alzheimer's disease.",
+      team2Role: "Research Associate · IDOR, Rio de Janeiro",
+      team2Focus: "Novel biomarkers of neurological conditions, including Alzheimer's and other dementias.",
+
+      teamGroupAssistant: "Research assistant",
+      team3Role: "Research Assistant",
+      team3Focus: "PhD in Biological Sciences with expertise in pharmacology; works on extracellular vesicles, neurocovid and neurodegenerative pathologies (since 2021).",
+
+      teamGroupPostdocs: "Postdoctoral fellows",
+      team4Role: "Postdoctoral Fellow · UC Berkeley",
+      team4Focus: "Molecular biologist and bioinformatician developing CRISPR-Cas epigenetic editors for Alzheimer's therapy.",
+      team5Role: "Postdoctoral Fellow",
+      team5Focus: "The impact of COVID-19 on the central nervous system and its possible connections to dementia.",
+      team6Role: "Postdoctoral Fellow",
+      team6Focus: "Brain health, digital biomarkers and machine learning.",
+
+      teamGroupPhd: "PhD students",
+      teamPhdRole: "PhD Student",
+      team7Focus: "The role of exercise-linked irisin in Alzheimer's disease.",
+      team8Focus: "Biochemical mechanisms of Alzheimer's and the impact of obesity on brain health.",
+      team9Focus: "Extracellular vesicles from Alzheimer's disease models.",
+      team10Focus: "COVID-19 biomarkers affecting the nervous system, studied using nanotechnology.",
+      team11Role: "PhD Student · Coordinator, Molecular Biology",
+      team11Focus: "Molecular diagnosis, neurobiology and stem cells, with interests in neuro research and sustainability.",
+
+      teamGroupMasters: "Master's students",
+      teamMastersRole: "Master's Student",
+      team12Focus: "Isolating and characterising neuronal-derived extracellular vesicles from plasma.",
+      team13Focus: "Characterising the cingulate cortex in non-human-primate Alzheimer's models.",
+
+      teamGroupUndergrad: "Undergraduate students",
+      teamUndergradRole: "Undergraduate Student",
+      team14Focus: "Biochemical mechanisms linking obesity to memory and cognition.",
+      team15Focus: "Measuring irisin protein concentration in patient samples.",
+      team16Focus: "Extracellular vesicles and FNDC5/irisin in Alzheimer's mouse models.",
+      team17Focus: "Therapeutic potential of mesenchymal-cell-derived extracellular vesicles.",
+
+      teamPlaceholderNote: "Portrait placeholders — pending real team photos with descriptive alt text."
     },
 
     pt: {
@@ -108,6 +163,7 @@
       metaDescription: "O De Felice Lab (Queen's University, Kingston) estuda a neurodegeneração em todas as escalas: descobrindo o que modifica o cérebro, medindo isso de forma não invasiva no sangue e provando causalidade no gene.",
       navAriaLabel: "Principal",
       navResearch: "Pesquisa",
+      navTeam: "Equipe",
       navPubs: "Publicações",
       navStudies: "Estudos",
       navContact: "Contato",
@@ -197,7 +253,61 @@
       factWhoLabel: "Quem pode participar",
       factWhoValue: "Adultos 55+",
       factWhereLabel: "Onde",
-      factLangLabel: "Idiomas"
+      factLangLabel: "Idiomas",
+
+      teamPageTitle: "Nossa Equipe — De Felice Lab",
+      teamPageMetaDescription: "As pessoas do De Felice Lab — a pesquisadora principal, associados de pesquisa, pós-doutorandos e estudantes de graduação e pós-graduação que estudam neurodegeneração no Canadá e no Brasil.",
+      teamHeroKicker: "Nosso laboratório · Canadá e Brasil",
+      teamHeroH1: "As pessoas por trás do trabalho.",
+      teamHeroLead: "Biólogos moleculares, bioinformatas, clínicos e estudantes espalhados entre Kingston e o Rio de Janeiro — cada um carregando um fio da mesma pergunta sobre como o cérebro envelhece.",
+
+      piEyebrow: "Pesquisadora principal",
+      piPortraitNote: "Placeholder de retrato",
+      piRole: "Professora Associada · Queen's University — Centre for Neuroscience Studies, e os Departamentos de Ciências Biomédicas e Moleculares e Psiquiatria.",
+      piBio: "Seu trabalho está na interseção entre a doença de Alzheimer e o metabolismo, com foco nas ligações entre Alzheimer, diabetes e inflamação. Ela estuda como os hormônios atuam na neurodegeneração e como a sinalização de insulina se rompe no cérebro com Alzheimer. A descoberta de que a irisina — um hormônio ligado ao exercício — protege contra o Alzheimer despertou grande interesse de cientistas e da mídia ao redor do mundo.",
+      piEducationLabel: "Formação",
+      piAffiliationsLabel: "Afiliações",
+
+      teamGroupAssociates: "Associados de pesquisa",
+      team1Role: "Associada de Pesquisa",
+      team1Focus: "Mecanismos moleculares por trás dos efeitos benéficos do exercício na doença de Alzheimer.",
+      team2Role: "Associado de Pesquisa · IDOR, Rio de Janeiro",
+      team2Focus: "Novos biomarcadores de condições neurológicas, incluindo Alzheimer e outras demências.",
+
+      teamGroupAssistant: "Assistente de pesquisa",
+      team3Role: "Assistente de Pesquisa",
+      team3Focus: "Doutora em Ciências Biológicas com expertise em farmacologia; atua com vesículas extracelulares, neurocovid e patologias neurodegenerativas (desde 2021).",
+
+      teamGroupPostdocs: "Pós-doutorandos",
+      team4Role: "Pós-doutorando · UC Berkeley",
+      team4Focus: "Biólogo molecular e bioinformata desenvolvendo editores epigenéticos CRISPR-Cas para terapia do Alzheimer.",
+      team5Role: "Pós-doutoranda",
+      team5Focus: "O impacto da COVID-19 no sistema nervoso central e suas possíveis conexões com demência.",
+      team6Role: "Pós-doutorando",
+      team6Focus: "Saúde cerebral, biomarcadores digitais e aprendizado de máquina.",
+
+      teamGroupPhd: "Estudantes de doutorado",
+      teamPhdRole: "Estudante de Doutorado",
+      team7Focus: "O papel da irisina ligada ao exercício na doença de Alzheimer.",
+      team8Focus: "Mecanismos bioquímicos do Alzheimer e o impacto da obesidade na saúde cerebral.",
+      team9Focus: "Vesículas extracelulares em modelos da doença de Alzheimer.",
+      team10Focus: "Biomarcadores da COVID-19 que afetam o sistema nervoso, estudados com nanotecnologia.",
+      team11Role: "Estudante de Doutorado · Coordenador, Biologia Molecular",
+      team11Focus: "Diagnóstico molecular, neurobiologia e células-tronco, com interesse em pesquisa neuro e sustentabilidade.",
+
+      teamGroupMasters: "Estudantes de mestrado",
+      teamMastersRole: "Estudante de Mestrado",
+      team12Focus: "Isolamento e caracterização de vesículas extracelulares de origem neuronal no plasma.",
+      team13Focus: "Caracterização do córtex cingulado em modelos de Alzheimer em primatas não humanos.",
+
+      teamGroupUndergrad: "Estudantes de graduação",
+      teamUndergradRole: "Estudante de Graduação",
+      team14Focus: "Mecanismos bioquímicos que ligam a obesidade à memória e à cognição.",
+      team15Focus: "Medição da concentração da proteína irisina em amostras de pacientes.",
+      team16Focus: "Vesículas extracelulares e FNDC5/irisina em modelos murinos de Alzheimer.",
+      team17Focus: "Potencial terapêutico de vesículas extracelulares derivadas de células mesenquimais.",
+
+      teamPlaceholderNote: "Placeholders de retrato — aguardando fotos reais da equipe com texto alternativo descritivo."
     }
   };
 
