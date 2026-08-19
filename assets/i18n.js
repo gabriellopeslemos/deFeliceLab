@@ -17,7 +17,7 @@
       navCta: 'Join our brain health study <span class="arrow" aria-hidden="true">→</span>',
       brandMarkAlt: "De Felice Lab circuit-brain mark",
 
-      heroH1: "Shaping the Fure of Neurosciente",
+      heroH1: "Shape the Future<br>of Neuroscience",
       heroLead: "We discover what modifies the brain, measure it non-invasively in blood, and prove causality at the gene. One research program spanning every scale of neurodegeneration.",
       heroCta1: 'See how the loop closes <span class="arrow" aria-hidden="true">→</span>',
       heroCta2: "Join our brain health study",
@@ -114,7 +114,7 @@
       navCta: 'Participe do nosso estudo de saúde cerebral <span class="arrow" aria-hidden="true">→</span>',
       brandMarkAlt: "Marca circuito-cérebro do De Felice Lab",
 
-      heroH1: "Moldando o Futuro da Neurociência",
+      heroH1: "Molde o Futuro<br>da Neurociência",
       heroLead: "Descobrimos o que modifica o cérebro, medimos isso de forma não invasiva no sangue e provamos causalidade no gene. Um único programa de pesquisa que percorre todas as escalas da neurodegeneração.",
       heroCta1: 'Veja como o ciclo se fecha <span class="arrow" aria-hidden="true">→</span>',
       heroCta2: "Participe do nosso estudo de saúde cerebral",

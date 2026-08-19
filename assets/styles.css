@@ -209,7 +209,7 @@ img { max-width: 100%; display: block; }
 .hero {
   min-height: 92vh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 /* Hero Waves — WebGL fabric-ripple background (procedural shader over a texture) */
 .hero-canvas {
