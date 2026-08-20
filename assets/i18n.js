@@ -116,17 +116,23 @@
       piEducationLabel: "Education",
       piAffiliationsLabel: "Affiliations",
 
-      teamGroupAssociates: "Research associates",
+      teamGroupBiomarkers: "Biomarkers",
+      teamGroupBiomarkersDesc: "Reading brain state from a blood draw, without imaging.",
+      teamGroupExerkines: "Exercise &amp; exerkines",
+      teamGroupExerkinesDesc: "How movement remodels neuronal signalling and protects the brain.",
+      teamGroupCrispr: "CRISPR",
+      teamGroupCrisprDesc: "Editing the target gene to prove causality at the source.",
+      teamGroupOther: "Other contributors",
+      teamGroupOtherDesc: "Supporting the lab's work across projects and cores.",
+
       team1Role: "Research Associate",
       team1Focus: "Molecular mechanisms behind the beneficial effects of exercise on Alzheimer's disease.",
       team2Role: "Research Associate · IDOR, Rio de Janeiro",
       team2Focus: "Novel biomarkers of neurological conditions, including Alzheimer's and other dementias.",
 
-      teamGroupAssistant: "Research assistant",
       team3Role: "Research Assistant",
       team3Focus: "PhD in Biological Sciences with expertise in pharmacology; works on extracellular vesicles, neurocovid and neurodegenerative pathologies (since 2021).",
 
-      teamGroupPostdocs: "Postdoctoral fellows",
       team4Role: "Postdoctoral Fellow · UC Berkeley",
       team4Focus: "Molecular biologist and bioinformatician developing CRISPR-Cas epigenetic editors for Alzheimer's therapy.",
       team5Role: "Postdoctoral Fellow",
@@ -134,7 +140,6 @@
       team6Role: "Postdoctoral Fellow",
       team6Focus: "Brain health, digital biomarkers and machine learning.",
 
-      teamGroupPhd: "PhD students",
       teamPhdRole: "PhD Student",
       team7Focus: "The role of exercise-linked irisin in Alzheimer's disease.",
       team8Focus: "Biochemical mechanisms of Alzheimer's and the impact of obesity on brain health.",
@@ -143,12 +148,12 @@
       team11Role: "PhD Student · Coordinator, Molecular Biology",
       team11Focus: "Molecular diagnosis, neurobiology and stem cells, with interests in neuro research and sustainability.",
 
-      teamGroupMasters: "Master's students",
       teamMastersRole: "Master's Student",
       team12Focus: "Isolating and characterising neuronal-derived extracellular vesicles from plasma.",
       team13Focus: "Characterising the cingulate cortex in non-human-primate Alzheimer's models.",
 
-      teamGroupUndergrad: "Undergraduate students",
+      teamMemberRole: "Team member",
+
       teamUndergradRole: "Undergraduate Student",
       team14Focus: "Biochemical mechanisms linking obesity to memory and cognition.",
       team15Focus: "Measuring irisin protein concentration in patient samples.",
@@ -268,17 +273,23 @@
       piEducationLabel: "Formação",
       piAffiliationsLabel: "Afiliações",
 
-      teamGroupAssociates: "Associados de pesquisa",
+      teamGroupBiomarkers: "Biomarcadores",
+      teamGroupBiomarkersDesc: "Lendo o estado do cérebro a partir de uma coleta de sangue, sem imagem.",
+      teamGroupExerkines: "Exercício &amp; exercinas",
+      teamGroupExerkinesDesc: "Como o movimento remodela a sinalização neuronal e protege o cérebro.",
+      teamGroupCrispr: "CRISPR",
+      teamGroupCrisprDesc: "Editando o gene-alvo para provar causalidade na fonte.",
+      teamGroupOther: "Outros colaboradores",
+      teamGroupOtherDesc: "Dando suporte ao trabalho do laboratório em projetos e núcleos diversos.",
+
       team1Role: "Associada de Pesquisa",
       team1Focus: "Mecanismos moleculares por trás dos efeitos benéficos do exercício na doença de Alzheimer.",
       team2Role: "Associado de Pesquisa · IDOR, Rio de Janeiro",
       team2Focus: "Novos biomarcadores de condições neurológicas, incluindo Alzheimer e outras demências.",
 
-      teamGroupAssistant: "Assistente de pesquisa",
       team3Role: "Assistente de Pesquisa",
       team3Focus: "Doutora em Ciências Biológicas com expertise em farmacologia; atua com vesículas extracelulares, neurocovid e patologias neurodegenerativas (desde 2021).",
 
-      teamGroupPostdocs: "Pós-doutorandos",
       team4Role: "Pós-doutorando · UC Berkeley",
       team4Focus: "Biólogo molecular e bioinformata desenvolvendo editores epigenéticos CRISPR-Cas para terapia do Alzheimer.",
       team5Role: "Pós-doutoranda",
@@ -286,7 +297,6 @@
       team6Role: "Pós-doutorando",
       team6Focus: "Saúde cerebral, biomarcadores digitais e aprendizado de máquina.",
 
-      teamGroupPhd: "Estudantes de doutorado",
       teamPhdRole: "Estudante de Doutorado",
       team7Focus: "O papel da irisina ligada ao exercício na doença de Alzheimer.",
       team8Focus: "Mecanismos bioquímicos do Alzheimer e o impacto da obesidade na saúde cerebral.",
@@ -295,12 +305,12 @@
       team11Role: "Estudante de Doutorado · Coordenador, Biologia Molecular",
       team11Focus: "Diagnóstico molecular, neurobiologia e células-tronco, com interesse em pesquisa neuro e sustentabilidade.",
 
-      teamGroupMasters: "Estudantes de mestrado",
       teamMastersRole: "Estudante de Mestrado",
       team12Focus: "Isolamento e caracterização de vesículas extracelulares de origem neuronal no plasma.",
       team13Focus: "Caracterização do córtex cingulado em modelos de Alzheimer em primatas não humanos.",
 
-      teamGroupUndergrad: "Estudantes de graduação",
+      teamMemberRole: "Membro da equipe",
+
       teamUndergradRole: "Estudante de Graduação",
       team14Focus: "Mecanismos bioquímicos que ligam a obesidade à memória e à cognição.",
       team15Focus: "Medição da concentração da proteína irisina em amostras de pacientes.",
