@@ -87,8 +87,6 @@
       applyH2: "Brain Health &amp; Smartwatch Tracking",
       applyP: "Participation lasts about 12 months, with follow-up visits every three months at our research site in Kingston, Ontario. Your participation can help researchers better understand the factors linked to healthy cognitive aging and support the development of more accessible ways to study brain health in the future.",
       applyCtaContact: 'Contact the study team <span class="arrow" aria-hidden="true">→</span>',
-      // Shown while the page is in English; switches to Portuguese on click.
-      ctaLangSwitch: "Ver em português",
 
       studyCardTitle: "What to expect",
       factTimeLabel: "Time required",
@@ -273,8 +271,6 @@
       applyH2: "Saúde Cerebral e Monitoramento por Smartwatch",
       applyP: "A participação dura cerca de 12 meses, com visitas de acompanhamento a cada três meses no nosso centro de pesquisa em Kingston, Ontario. Sua participação pode ajudar pesquisadores a entender melhor os fatores ligados ao envelhecimento cognitivo saudável e apoiar o desenvolvimento de formas mais acessíveis de estudar a saúde cerebral no futuro.",
       applyCtaContact: 'Fale com a equipe do estudo <span class="arrow" aria-hidden="true">→</span>',
-      // Shown while the page is in Portuguese; switches to English on click.
-      ctaLangSwitch: "View in English",
 
       studyCardTitle: "O que esperar",
       factTimeLabel: "Tempo necessário",
@@ -435,12 +431,6 @@
       var toggleBtn = e.target.closest && e.target.closest('.lang-btn');
       if (toggleBtn) {
         applyLanguage(toggleBtn.getAttribute('data-lang'));
-        return;
-      }
-      var switchCta = e.target.closest && e.target.closest('#lang-alt-cta');
-      if (switchCta) {
-        e.preventDefault();
-        applyLanguage(currentLang === 'en' ? 'pt' : 'en');
       }
     });
   });
