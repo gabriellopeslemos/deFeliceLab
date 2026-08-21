@@ -553,9 +553,6 @@ img { max-width: 100%; display: block; }
   margin: 22px 0 0;
   max-width: 52ch;
 }
-.study-steps { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 12px; font-family: 'Jost', sans-serif; font-size: 16px; color: var(--text-strong); }
-.study-steps li { display: flex; gap: 12px; align-items: baseline; }
-.study-steps span { color: var(--blue-500); font-family: 'IBM Plex Mono', monospace; }
 .study-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
 
 .study-card {
@@ -712,111 +709,202 @@ img { max-width: 100%; display: block; }
 }
 .study-hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
 
-/* Hover-reveal study tiles (side of the hero) */
-.study-stack { display: grid; gap: 14px; min-width: 0; }
-.study-tile {
+/* Single-study spotlight (side of the hero) */
+.study-spotlight {
   position: relative;
-  display: block;
-  min-height: 128px;
-  border-radius: 16px;
+  min-height: 360px;
+  display: flex;
+  border-radius: 18px;
   overflow: hidden;
   isolation: isolate;
   color: var(--white);
   border: 1px solid rgba(255,255,255,.14);
-  box-shadow: 0 14px 40px rgba(5, 6, 30, .35);
-  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+  box-shadow: 0 18px 48px rgba(5, 6, 30, .4);
 }
-.study-tile:hover,
-.study-tile:focus-visible {
-  transform: translateY(-2px);
-  border-color: rgba(255,255,255,.4);
-  box-shadow: 0 22px 54px rgba(5, 6, 30, .5);
-  color: var(--white);
-}
-.study-tile-visual {
+.study-spotlight-visual {
   position: absolute;
   inset: 0;
   z-index: 0;
-  transform: scale(1.02);
-  transition: transform .5s ease;
-}
-.study-tile:hover .study-tile-visual,
-.study-tile:focus-visible .study-tile-visual { transform: scale(1.08); }
-.study-tile-visual--1 {
   background:
-    radial-gradient(closest-side at 78% 30%, rgba(0,229,255,.85), rgba(0,229,255,0) 62%),
-    radial-gradient(closest-side at 30% 68%, rgba(120,90,255,.6), rgba(120,90,255,0) 60%),
-    linear-gradient(135deg, #10225f, #0a0a33);
+    radial-gradient(closest-side at 80% 22%, rgba(0,229,255,.6), rgba(0,229,255,0) 60%),
+    radial-gradient(closest-side at 85% 72%, rgba(255,45,175,.4), rgba(255,45,175,0) 62%),
+    radial-gradient(closest-side at 20% 85%, rgba(120,90,255,.5), rgba(120,90,255,0) 60%),
+    linear-gradient(150deg, #141a63, #0a0a33);
 }
-.study-tile-visual--2 {
-  background:
-    radial-gradient(closest-side at 74% 34%, rgba(255,45,175,.72), rgba(255,45,175,0) 60%),
-    radial-gradient(closest-side at 26% 70%, rgba(59,71,214,.6), rgba(59,71,214,0) 60%),
-    linear-gradient(135deg, #2a0f57, #0a0a33);
-}
-.study-tile-visual--3 {
-  background:
-    radial-gradient(closest-side at 76% 32%, rgba(120,90,255,.7), rgba(120,90,255,0) 60%),
-    radial-gradient(closest-side at 28% 72%, rgba(0,229,255,.5), rgba(0,229,255,0) 58%),
-    linear-gradient(135deg, #141a63, #0a0a33);
-}
-.study-tile-scrim {
+.study-spotlight-scrim {
   position: absolute;
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(6,7,32,0) 22%, rgba(6,7,32,.55) 64%, rgba(6,7,32,.86) 100%);
+  background: linear-gradient(180deg, rgba(6,7,32,0) 12%, rgba(6,7,32,.5) 58%, rgba(6,7,32,.88) 100%);
 }
-.study-tile-body {
+.study-spotlight-body {
   position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
-  min-height: 128px;
-  padding: 20px 22px 22px;
+  justify-content: center;
+  width: 100%;
+  padding: clamp(24px, 3vw, 34px) clamp(24px, 3vw, 32px) clamp(26px, 3.4vw, 34px);
 }
-.study-tile-tag {
+.study-spotlight-tag {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 11px;
   letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--cyan);
 }
-.study-tile-name {
+.study-spotlight-name {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .02em;
-  font-size: 21px;
+  font-size: clamp(20px, 2.2vw, 25px);
   color: var(--white);
-  margin-top: 6px;
+  margin-top: 0;
 }
-.study-tile-intro {
+.study-spotlight-intro {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255,255,255,.88);
+  max-width: 46ch;
+  margin-top: 12px;
+}
+.study-spotlight-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 30px;
+  margin: 24px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,.16);
+}
+.study-spotlight-stat { min-width: 0; margin: 0; }
+.study-spotlight-stat dt {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.55);
+  margin: 0;
+}
+.study-spotlight-stat dd {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: var(--white);
+  margin: 6px 0 0;
+}
+
+/* ---------- Study page: what participation involves ---------- */
+.involves-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: clamp(28px, 3.4vw, 56px);
+  row-gap: clamp(40px, 5vh, 64px);
+  margin-top: clamp(40px, 5.5vh, 64px);
+}
+.involves-card { max-width: 340px; }
+.involves-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  color: var(--navy-900);
+}
+.involves-num svg {
+  width: 100%;
+  height: 100%;
+}
+.involves-card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-size: 17px;
+  color: var(--navy-900);
+  margin: 18px 0 0;
+}
+.involves-card p {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--gray-600);
+  margin: 10px 0 0;
+}
+@media (max-width: 900px) {
+  .involves-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .involves-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Study page: FAQ ---------- */
+.faq-list {
+  margin-top: clamp(28px, 4vh, 40px);
+  display: grid;
+  gap: 2px;
+  background: var(--gray-100);
+  border: 1px solid var(--gray-100);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.faq-item { background: var(--white); }
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--navy-900);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  color: var(--blue-500);
+  flex-shrink: 0;
+  transition: transform .2s ease;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p {
+  margin: 0;
+  padding: 0 24px 22px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--gray-600);
+}
+
+/* ---------- Study page: ethics approval ---------- */
+.ethics-section { max-width: var(--max-width); margin: 0 auto; padding: clamp(64px, 9vh, 104px) var(--gutter); }
+.ethics-box {
+  background: var(--blue-50);
+  border: 1px solid var(--blue-100);
+  border-radius: 14px;
+  padding: clamp(24px, 3vw, 32px) clamp(26px, 3.4vw, 34px);
+}
+.ethics-box .eyebrow { margin-bottom: 10px; }
+.ethics-box p {
   font-family: 'Jost', sans-serif;
   font-weight: 300;
   font-size: 14.5px;
-  line-height: 1.5;
-  color: rgba(255,255,255,.9);
-  max-width: 44ch;
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transform: translateY(6px);
-  transition: max-height .45s ease, opacity .3s ease, transform .45s ease, margin-top .45s ease;
+  line-height: 1.65;
+  color: var(--gray-600);
+  margin: 0;
 }
-.study-tile:hover .study-tile-intro,
-.study-tile:focus-visible .study-tile-intro {
-  max-height: 180px;
-  opacity: 1;
-  transform: translateY(0);
-  margin-top: 10px;
-}
-/* Touch / no-hover devices: keep the intro visible so nothing is hidden behind a hover */
-@media (hover: none) {
-  .study-tile-intro { max-height: 180px; opacity: 1; transform: none; margin-top: 10px; }
-}
+.ethics-box p + p { margin-top: 10px; }
+.ethics-box a { font-weight: 500; }
 
 @media (max-width: 900px) {
   .study-hero-inner { grid-template-columns: 1fr; gap: clamp(28px, 6vw, 44px); }
