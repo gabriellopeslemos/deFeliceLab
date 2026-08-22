@@ -19,13 +19,13 @@
       brandMarkAlt: "De Felice Lab circuit-brain mark",
 
       heroH1: "Shape the Future<br>of Neuroscience",
-      heroLead: "We discover what modifies the brain, measure it non-invasively in blood, and prove causality at the gene. One research program spanning every scale of neurodegeneration.",
-      heroCta1: 'See how the loop closes <span class="arrow" aria-hidden="true">→</span>',
+      heroLead: "We investigate how physical exercise affects brain health at a molecular level, and how this knowledge can be applied to detect and prevent Alzheimer's disease earlier.",
+      heroCta1: 'See our research approach <span class="arrow" aria-hidden="true">→</span>',
       heroCta2: "Join our brain health study",
 
       cycleEyebrow: "The translational loop",
-      cycleH2: "Most labs run one step. We run the whole sequence — and each step feeds the next.",
-      cycleP: "Exercise reshapes the brain. That change shows up as a signal in the blood. Gene editing tells us whether the signal is the cause. Discover, measure, prove — a single closed program.",
+      cycleH2: "How we investigate Alzheimer's disease.",
+      cycleP: "We investigate how physical exercise affects the brain, translate that effect into blood-based biomarkers, and use gene editing to establish causality, building the evidence needed for earlier detection and prevention of Alzheimer's disease.",
 
       cycle1Tag: "Discover",
       cycle1H3: "Exercise &amp; the brain",
@@ -203,13 +203,13 @@
       brandMarkAlt: "Marca circuito-cérebro do De Felice Lab",
 
       heroH1: "Molde o Futuro<br>da Neurociência",
-      heroLead: "Descobrimos o que modifica o cérebro, medimos isso de forma não invasiva no sangue e provamos causalidade no gene. Um único programa de pesquisa que percorre todas as escalas da neurodegeneração.",
-      heroCta1: 'Veja como o ciclo se fecha <span class="arrow" aria-hidden="true">→</span>',
+      heroLead: "Investigamos como o exercício físico afeta a saúde cerebral em nível molecular, e como esse conhecimento pode ser aplicado para detectar e prevenir a doença de Alzheimer mais precocemente.",
+      heroCta1: 'Veja nossa abordagem de pesquisa <span class="arrow" aria-hidden="true">→</span>',
       heroCta2: "Participe do nosso estudo de saúde cerebral",
 
       cycleEyebrow: "O ciclo translacional",
-      cycleH2: "A maioria dos laboratórios executa uma etapa. Nós executamos a sequência inteira — e cada etapa alimenta a próxima.",
-      cycleP: "O exercício remodela o cérebro. Essa mudança aparece como um sinal no sangue. A edição gênica nos diz se o sinal é a causa. Descobrir, medir, provar — um único programa fechado.",
+      cycleH2: "Como investigamos a doença de Alzheimer.",
+      cycleP: "Investigamos como o exercício físico afeta o cérebro, traduzimos esse efeito em biomarcadores sanguíneos e usamos edição gênica para estabelecer causalidade, construindo as evidências necessárias para a detecção precoce e a prevenção da doença de Alzheimer.",
 
       cycle1Tag: "Descobrir",
       cycle1H3: "Exercício e o cérebro",
