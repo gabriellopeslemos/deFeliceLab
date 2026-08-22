@@ -7,7 +7,9 @@
 <meta name="description" content="De Felice Lab (Queen's University, Kingston) studies neurodegeneration across every scale: discovering what modifies the brain, measuring it non-invasively in blood, and proving causality at the gene." data-i18n-attr-content="metaDescription">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -278,7 +280,14 @@
     if (texReady) once(); else img.addEventListener('load', once);
     draw();
   } else {
-    requestAnimationFrame(tick);
+    // Paint one static frame immediately so the hero isn't blank, but hold off
+    // starting the continuous per-frame redraw loop until after `load` — a
+    // perpetual full-canvas WebGL redraw competing with the initial paint was
+    // delaying LCP on the hero text.
+    draw();
+    var startLoop = function () { requestAnimationFrame(tick); };
+    if (document.readyState === 'complete') startLoop();
+    else window.addEventListener('load', startLoop, { once: true });
   }
 })();
 </script>
