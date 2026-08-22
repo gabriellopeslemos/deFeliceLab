@@ -20,7 +20,14 @@
     <img class="brand-mark" src="assets/logoSemTexto.png" alt="De Felice Lab circuit-brain mark" width="38" height="38" data-i18n-attr-alt="brandMarkAlt">
     <span class="brand-name">De Felice Lab</span>
   </a>
-  <nav class="site-nav" aria-label="Primary" data-i18n-attr-aria-label="navAriaLabel">
+  <div class="header-mobile-controls">
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="site-nav" id="site-nav" aria-label="Primary" data-i18n-attr-aria-label="navAriaLabel">
     <a href="index.html#cycle" data-i18n="navResearch">Research</a>
     <a href="team.html" data-i18n="navTeam">Team</a>
     <a href="publications.html" aria-current="page" data-i18n="navPubs">Publications</a>
@@ -75,5 +82,6 @@
 
 <script src="assets/i18n.js" defer></script>
 <script src="assets/pubs.js" defer></script>
+<script src="assets/nav.js" defer></script>
 </body>
 </html>

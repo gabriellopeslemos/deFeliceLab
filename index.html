@@ -20,7 +20,14 @@
     <img class="brand-mark" src="assets/logoSemTexto.png" alt="De Felice Lab circuit-brain mark" width="38" height="38" data-i18n-attr-alt="brandMarkAlt">
     <span class="brand-name">De Felice Lab</span>
   </a>
-  <nav class="site-nav" aria-label="Primary" data-i18n-attr-aria-label="navAriaLabel">
+  <div class="header-mobile-controls">
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="site-nav" id="site-nav" aria-label="Primary" data-i18n-attr-aria-label="navAriaLabel">
     <a href="#cycle" data-i18n="navResearch">Research</a>
     <a href="team.html" data-i18n="navTeam">Team</a>
     <a href="#pubs" data-i18n="navPubs">Publications</a>
@@ -130,15 +137,15 @@
     <section class="funding-section" aria-label="Funding partners" data-i18n-attr-aria-label="fundingAriaLabel">
       <div class="eyebrow eyebrow--muted" style="text-align:center;" data-i18n="fundingEyebrow">Funding</div>
       <div class="funding-grid">
-        <span class="funder"><img src="assets/img/CIHRIRSCLogo.png" alt="CIHR / IRSC"></span>
-        <span class="funder"><img src="assets/img/westonBrainLogo.webp" alt="Weston Brain Institute"></span>
-        <span class="funder"><img src="assets/img/innovationCALogo.png" alt="Canada Foundation for Innovation"></span>
-        <span class="funder"><img src="assets/img/idorLogo.png" alt="IDOR"></span>
-        <span class="funder"><img src="assets/img/CNPqLogo.png" alt="CNPq"></span>
-        <span class="funder"><img src="assets/img/faperjLogo.png" alt="FAPERJ"></span>
-        <span class="funder"><img src="assets/img/inntLogo.png" alt="INNT"></span>
-        <span class="funder"><img src="assets/img/alzheimerSocietyLogo.png" alt="Alzheimer Society"></span>
-        <span class="funder"><img src="assets/img/QueensLogo.png" alt="Queen's University"></span>
+        <span class="funder"><img src="assets/img/CIHRIRSCLogo.png" alt="CIHR / IRSC" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/westonBrainLogo.webp" alt="Weston Brain Institute" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/innovationCALogo.png" alt="Canada Foundation for Innovation" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/idorLogo.png" alt="IDOR" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/CNPqLogo.png" alt="CNPq" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/faperjLogo.png" alt="FAPERJ" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/inntLogo.png" alt="INNT" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/alzheimerSocietyLogo.png" alt="Alzheimer Society" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/QueensLogo.png" alt="Queen's University" loading="lazy" decoding="async"></span>
       </div>
     </section>
 
@@ -293,5 +300,6 @@
 </script>
 <script src="assets/i18n.js" defer></script>
 <script src="assets/pubs.js" defer></script>
+<script src="assets/nav.js" defer></script>
 </body>
 </html>
