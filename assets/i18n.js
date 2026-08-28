@@ -146,7 +146,7 @@
 
       teamGroupBiomarkers: "Biomarkers",
       teamGroupBiomarkersDesc: "Reading brain state from a blood draw, without imaging.",
-      teamGroupExerkines: "Exercise &amp; exerkines",
+      teamGroupExerkines: "Exerkines",
       teamGroupExerkinesDesc: "How movement remodels neuronal signalling and protects the brain.",
       teamGroupCrispr: "CRISPR",
       teamGroupCrisprDesc: "Editing the target gene to prove causality at the source.",
@@ -161,7 +161,7 @@
       team3Role: "Research Assistant (IDOR)",
       team3Focus: "PhD in Biological Sciences with expertise in pharmacology; works on extracellular vesicles, neurocovid and neurodegenerative pathologies (since 2021).",
 
-      team4Role: "Postdoctoral Fellow · UC Berkeley",
+      team4Role: "Postdoctoral Fellow",
       team4Focus: "Molecular biologist and bioinformatician developing CRISPR-Cas epigenetic editors for Alzheimer's therapy.",
       team5Role: "Postdoctoral Fellow",
       team5Focus: "The impact of COVID-19 on the central nervous system and its possible connections to dementia.",
@@ -183,7 +183,7 @@
       teamMemberRole: "Team member",
 
       teamUndergradRole: "Undergraduate Student",
-      teamICRole: "Undergraduate Research Assistant (IC)",
+      teamICRole: "Undergraduate Student",
       team14Focus: "Biochemical mechanisms linking obesity to memory and cognition.",
       team15Focus: "Measuring irisin protein concentration in patient samples.",
       team16Focus: "Extracellular vesicles and FNDC5/irisin in Alzheimer's mouse models.",
@@ -332,7 +332,7 @@
 
       teamGroupBiomarkers: "Biomarcadores",
       teamGroupBiomarkersDesc: "Lendo o estado do cérebro a partir de uma coleta de sangue, sem imagem.",
-      teamGroupExerkines: "Exercício &amp; exercinas",
+      teamGroupExerkines: "Exercinas",
       teamGroupExerkinesDesc: "Como o movimento remodela a sinalização neuronal e protege o cérebro.",
       teamGroupCrispr: "CRISPR",
       teamGroupCrisprDesc: "Editando o gene-alvo para provar causalidade na fonte.",
@@ -347,7 +347,7 @@
       team3Role: "Assistente de Pesquisa (IDOR)",
       team3Focus: "Doutora em Ciências Biológicas com expertise em farmacologia; atua com vesículas extracelulares, neurocovid e patologias neurodegenerativas (desde 2021).",
 
-      team4Role: "Pós-doutorando · UC Berkeley",
+      team4Role: "Pós-doutorando",
       team4Focus: "Biólogo molecular e bioinformata desenvolvendo editores epigenéticos CRISPR-Cas para terapia do Alzheimer.",
       team5Role: "Pós-doutoranda",
       team5Focus: "O impacto da COVID-19 no sistema nervoso central e suas possíveis conexões com demência.",
@@ -369,7 +369,7 @@
       teamMemberRole: "Membro da equipe",
 
       teamUndergradRole: "Estudante de Graduação",
-      teamICRole: "Iniciação Científica",
+      teamICRole: "Estudante de Graduação (IC)",
       team14Focus: "Mecanismos bioquímicos que ligam a obesidade à memória e à cognição.",
       team15Focus: "Medição da concentração da proteína irisina em amostras de pacientes.",
       team16Focus: "Vesículas extracelulares e FNDC5/irisina em modelos murinos de Alzheimer.",
