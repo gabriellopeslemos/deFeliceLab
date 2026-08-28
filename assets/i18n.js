@@ -183,6 +183,7 @@
       teamMemberRole: "Team member",
 
       teamUndergradRole: "Undergraduate Student",
+      teamICRole: "Undergraduate Research Assistant (IC)",
       team14Focus: "Biochemical mechanisms linking obesity to memory and cognition.",
       team15Focus: "Measuring irisin protein concentration in patient samples.",
       team16Focus: "Extracellular vesicles and FNDC5/irisin in Alzheimer's mouse models.",
@@ -368,6 +369,7 @@
       teamMemberRole: "Membro da equipe",
 
       teamUndergradRole: "Estudante de Graduação",
+      teamICRole: "Iniciação Científica",
       team14Focus: "Mecanismos bioquímicos que ligam a obesidade à memória e à cognição.",
       team15Focus: "Medição da concentração da proteína irisina em amostras de pacientes.",
       team16Focus: "Vesículas extracelulares e FNDC5/irisina em modelos murinos de Alzheimer.",
