@@ -138,10 +138,11 @@
 
       piEyebrow: "Principal investigator",
       piPortraitNote: "Portrait placeholder",
-      piRole: "Associate Professor · Queen's University — Centre for Neuroscience Studies, and the Departments of Biomedical &amp; Molecular Sciences and Psychiatry.",
-      piBio: "Her work sits at the intersection of Alzheimer's disease and metabolism, with a focus on the links between Alzheimer's, diabetes and inflammation. She studies how hormones act in neurodegeneration and how insulin signalling breaks down in the Alzheimer's brain. Her finding that irisin — an exercise-linked hormone — protects against Alzheimer's has drawn wide interest from scientists and media around the world.",
+      piBio: "Dr. De Felice's research explores the interface between Alzheimer's disease and metabolism, with pioneering work on hormone signaling, insulin resistance, and inflammation in the brain. Her studies, including recent findings on the exercise hormone irisin, have shaped the understanding of how lifestyle interventions, particularly physical exercise, can help preserve brain health and delay Alzheimer's disease.",
       piEducationLabel: "Education",
       piAffiliationsLabel: "Affiliations",
+      piScholarLabel: "Google Scholar",
+      piLattesLabel: "Lattes CV",
 
       teamGroupBiomarkers: "Biomarkers",
       teamGroupBiomarkersDesc: "Reading brain state from a blood draw, without imaging.",
@@ -154,10 +155,10 @@
 
       team1Role: "Research Associate",
       team1Focus: "Molecular mechanisms behind the beneficial effects of exercise on Alzheimer's disease.",
-      team2Role: "Research Associate · IDOR, Rio de Janeiro",
+      team2Role: "Research Associate",
       team2Focus: "Novel biomarkers of neurological conditions, including Alzheimer's and other dementias.",
 
-      team3Role: "Research Assistant",
+      team3Role: "Research Assistant (IDOR)",
       team3Focus: "PhD in Biological Sciences with expertise in pharmacology; works on extracellular vesicles, neurocovid and neurodegenerative pathologies (since 2021).",
 
       team4Role: "Postdoctoral Fellow · UC Berkeley",
@@ -322,10 +323,11 @@
 
       piEyebrow: "Pesquisadora principal",
       piPortraitNote: "Placeholder de retrato",
-      piRole: "Professora Associada · Queen's University — Centre for Neuroscience Studies, e os Departamentos de Ciências Biomédicas e Moleculares e Psiquiatria.",
-      piBio: "Seu trabalho está na interseção entre a doença de Alzheimer e o metabolismo, com foco nas ligações entre Alzheimer, diabetes e inflamação. Ela estuda como os hormônios atuam na neurodegeneração e como a sinalização de insulina se rompe no cérebro com Alzheimer. A descoberta de que a irisina — um hormônio ligado ao exercício — protege contra o Alzheimer despertou grande interesse de cientistas e da mídia ao redor do mundo.",
+      piBio: "A pesquisa da Dra. De Felice explora a interface entre a doença de Alzheimer e o metabolismo, com contribuições pioneiras sobre sinalização hormonal, resistência à insulina e inflamação no cérebro. Seus estudos, incluindo achados recentes sobre a irisina, hormônio ligado ao exercício físico, têm ajudado a compreender como intervenções no estilo de vida, em particular o exercício físico, podem preservar a saúde cerebral e retardar a doença de Alzheimer.",
       piEducationLabel: "Formação",
       piAffiliationsLabel: "Afiliações",
+      piScholarLabel: "Google Scholar",
+      piLattesLabel: "Currículo Lattes",
 
       teamGroupBiomarkers: "Biomarcadores",
       teamGroupBiomarkersDesc: "Lendo o estado do cérebro a partir de uma coleta de sangue, sem imagem.",
@@ -338,10 +340,10 @@
 
       team1Role: "Associada de Pesquisa",
       team1Focus: "Mecanismos moleculares por trás dos efeitos benéficos do exercício na doença de Alzheimer.",
-      team2Role: "Associado de Pesquisa · IDOR, Rio de Janeiro",
+      team2Role: "Associado de Pesquisa",
       team2Focus: "Novos biomarcadores de condições neurológicas, incluindo Alzheimer e outras demências.",
 
-      team3Role: "Assistente de Pesquisa",
+      team3Role: "Assistente de Pesquisa (IDOR)",
       team3Focus: "Doutora em Ciências Biológicas com expertise em farmacologia; atua com vesículas extracelulares, neurocovid e patologias neurodegenerativas (desde 2021).",
 
       team4Role: "Pós-doutorando · UC Berkeley",
