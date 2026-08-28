@@ -11,13 +11,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="assets/styles.css">
+<link rel="preload" as="image" href="assets/logosDeFeliceLab/textureBackground.webp" fetchpriority="high">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
   <a class="brand" href="#top">
-    <img class="brand-mark" src="assets/logoSemTexto.png" alt="De Felice Lab circuit-brain mark" width="38" height="38" data-i18n-attr-alt="brandMarkAlt">
+    <img class="brand-mark" src="assets/logoSemTexto.webp" alt="De Felice Lab circuit-brain mark" width="38" height="38" data-i18n-attr-alt="brandMarkAlt">
     <span class="brand-name">De Felice Lab</span>
   </a>
   <div class="header-mobile-controls">
@@ -137,15 +138,15 @@
     <section class="funding-section" aria-label="Funding partners" data-i18n-attr-aria-label="fundingAriaLabel">
       <div class="eyebrow eyebrow--muted" style="text-align:center;" data-i18n="fundingEyebrow">Funding</div>
       <div class="funding-grid">
-        <span class="funder"><img src="assets/img/CIHRIRSCLogo.png" alt="CIHR / IRSC" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/CIHRIRSCLogo.webp" alt="CIHR / IRSC" loading="lazy" decoding="async"></span>
         <span class="funder"><img src="assets/img/westonBrainLogo.webp" alt="Weston Brain Institute" loading="lazy" decoding="async"></span>
-        <span class="funder"><img src="assets/img/innovationCALogo.png" alt="Canada Foundation for Innovation" loading="lazy" decoding="async"></span>
-        <span class="funder"><img src="assets/img/idorLogo.png" alt="IDOR" loading="lazy" decoding="async"></span>
-        <span class="funder"><img src="assets/img/CNPqLogo.png" alt="CNPq" loading="lazy" decoding="async"></span>
-        <span class="funder"><img src="assets/img/faperjLogo.png" alt="FAPERJ" loading="lazy" decoding="async"></span>
-        <span class="funder"><img src="assets/img/inntLogo.png" alt="INNT" loading="lazy" decoding="async"></span>
-        <span class="funder"><img src="assets/img/alzheimerSocietyLogo.png" alt="Alzheimer Society" loading="lazy" decoding="async"></span>
-        <span class="funder"><img src="assets/img/QueensLogo.png" alt="Queen's University" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/innovationCALogo.webp" alt="Canada Foundation for Innovation" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/idorLogo.webp" alt="IDOR" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/CNPqLogo.webp" alt="CNPq" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/faperjLogo.webp" alt="FAPERJ" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/inntLogo.webp" alt="INNT" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/alzheimerSocietyLogo.webp" alt="Alzheimer Society" loading="lazy" decoding="async"></span>
+        <span class="funder"><img src="assets/img/QueensLogo.webp" alt="Queen's University" loading="lazy" decoding="async"></span>
       </div>
     </section>
 
@@ -181,7 +182,7 @@
   if (!gl) return; // graceful fallback to the CSS background colour
 
   var PERIOD = 16;          // seconds per seamless loop
-  var TEXTURE_URL = 'assets/logosDeFeliceLab/textureBackground.png';
+  var TEXTURE_URL = 'assets/logosDeFeliceLab/textureBackground.webp';
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   var VS = 'attribute vec2 aPos; varying vec2 vUv;' +
