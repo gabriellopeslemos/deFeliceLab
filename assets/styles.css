@@ -226,6 +226,8 @@ img { max-width: 100%; display: block; }
   border-radius: 999px;
 }
 .lang-btn {
+  display: inline-block;
+  text-decoration: none;
   border: none;
   background: transparent;
   color: var(--text-muted);
@@ -237,7 +239,7 @@ img { max-width: 100%; display: block; }
   letter-spacing: .04em;
 }
 .lang-btn:hover { color: var(--navy-900); }
-.lang-btn[aria-pressed="true"] { background: var(--navy-900); color: var(--white); }
+.lang-btn[aria-current="true"] { background: var(--navy-900); color: var(--white); }
 
 /* Buttons */
 .btn {
@@ -345,7 +347,7 @@ img { max-width: 100%; display: block; }
 /* ---------- Cycle / research pillars ---------- */
 .section { padding: clamp(72px, 10vh, 120px) var(--gutter); }
 .section-intro { max-width: 64ch; }
-.section-intro h2, .section-title {
+.section-intro h1, .section-intro h2, .section-title {
   font-family: 'Spectral', serif;
   font-weight: 400;
   font-size: clamp(30px, 4vw, 52px);

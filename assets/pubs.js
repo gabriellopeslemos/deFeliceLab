@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const PUBLICATIONS_URL = "assets/publications.json";
+  const PUBLICATIONS_URL = "/assets/publications.json";
   const TAG_CLASS_COUNT = 3;
 
   function el(tag, className, text) {
