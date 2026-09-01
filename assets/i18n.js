@@ -10,6 +10,7 @@
       pageTitle: "De Felice Lab — From the whole body to the single gene",
       metaDescription: "De Felice Lab (Queen's University, Kingston) studies neurodegeneration across every scale: discovering what modifies the brain, measuring it non-invasively in blood, and proving causality at the gene.",
       navAriaLabel: "Primary",
+      navHome: "Home",
       navResearch: "Research",
       navTeam: "Team",
       navPubs: "Publications",
@@ -55,7 +56,6 @@
 
       pubsPageTitle: "All Publications — De Felice Lab",
       pubsPageMetaDescription: "The complete, continuously updated list of peer-reviewed publications from the De Felice Lab, fetched from ORCID.",
-      pubsBackLink: "← Back to Publications",
       pubsAllEyebrow: "Full record",
       pubsAllH2: "Every publication, in one place.",
       pubsAllP: "The complete, continuously updated list of the lab's peer-reviewed work.",
@@ -213,6 +213,7 @@
       pageTitle: "De Felice Lab — Do corpo inteiro ao gene único",
       metaDescription: "O De Felice Lab (Queen's University, Kingston) estuda a neurodegeneração em todas as escalas: descobrindo o que modifica o cérebro, medindo isso de forma não invasiva no sangue e provando causalidade no gene.",
       navAriaLabel: "Principal",
+      navHome: "Início",
       navResearch: "Pesquisa",
       navTeam: "Equipe",
       navPubs: "Publicações",
@@ -258,7 +259,6 @@
 
       pubsPageTitle: "Todas as Publicações — De Felice Lab",
       pubsPageMetaDescription: "A lista completa e continuamente atualizada das publicações revisadas por pares do De Felice Lab, buscada no ORCID.",
-      pubsBackLink: "← Voltar para Publicações",
       pubsAllEyebrow: "Registro completo",
       pubsAllH2: "Todas as publicações, em um só lugar.",
       pubsAllP: "A lista completa e continuamente atualizada dos trabalhos revisados por pares do laboratório.",

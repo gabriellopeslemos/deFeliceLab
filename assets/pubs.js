@@ -239,7 +239,7 @@
 
     list.parentNode.insertBefore(fieldset, list);
 
-    return { filters, reset };
+    return { filters, reset, element: fieldset };
   }
 
   function applyFilters(publications, filters) {
@@ -287,7 +287,7 @@
     }
 
     const filterBar = buildFilterBar(list, publications, renderList);
-    list.parentNode.insertBefore(countEl, list);
+    filterBar.element.appendChild(countEl);
     renderList();
   }
 
