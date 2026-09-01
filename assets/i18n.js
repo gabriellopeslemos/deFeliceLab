@@ -28,18 +28,18 @@
       cycleP: "We investigate how physical exercise affects the brain, translate that effect into blood-based biomarkers, and use gene editing to establish causality, building the evidence needed for earlier detection and prevention of Alzheimer's disease.",
 
       cycle1Tag: "Discover",
-      cycle1H3: "Exercise &amp; the brain",
-      cycle1P: "Our flagship line: how physical exercise remodels neuronal signalling and protects against neurodegeneration — the upstream cause we can actually move.",
+      cycle1H3: "Exerkines",
+      cycle1P: "We investigate how exercise-released molecules, known as exerkines, influence brain health and protect against Alzheimer's disease, as well as their potential transport via extracellular vesicles.",
       cycle1Foot: "Whole body → brain",
 
       cycle2Tag: "Measure",
       cycle2H3: "Plasma biomarkers",
-      cycle2P: "We read that change without opening the skull — quantifying brain state from a blood draw, so the effect becomes a number you can track over time.",
+      cycle2P: "Through a simple blood sample, we can identify plasma biomarkers that may enable the early detection of Alzheimer's disease.",
       cycle2Foot: "Brain → blood",
 
       cycle3Tag: "Prove",
-      cycle3H3: "CRISPR gene editing",
-      cycle3P: "We edit the target gene to test causality directly — turning a correlation in the blood into a mechanism we can switch on and off at the source.",
+      cycle3H3: "CRISPR epigenome editing",
+      cycle3P: "Using CRISPR-based epigenome editing, we can precisely regulate gene activity without altering the DNA sequence, exploring new therapeutic strategies for Alzheimer's disease.",
       cycle3Foot: "Blood → gene",
 
       imagingAriaLabel: "Immunofluorescence imaging",
@@ -214,18 +214,18 @@
       cycleP: "Investigamos como o exercício físico afeta o cérebro, traduzimos esse efeito em biomarcadores sanguíneos e usamos edição gênica para estabelecer causalidade, construindo as evidências necessárias para a detecção precoce e a prevenção da doença de Alzheimer.",
 
       cycle1Tag: "Descobrir",
-      cycle1H3: "Exercício e o cérebro",
-      cycle1P: "Nossa linha principal: como o exercício físico remodela a sinalização neuronal e protege contra a neurodegeneração — a causa a montante que de fato podemos modificar.",
+      cycle1H3: "Exerkines",
+      cycle1P: "Investigamos como moléculas liberadas pelo exercício físico, conhecidas como exerkines, influenciam a saúde cerebral e protegem contra a doença de Alzheimer, além de seu possível transporte por vesículas extracelulares.",
       cycle1Foot: "Corpo inteiro → cérebro",
 
       cycle2Tag: "Medir",
       cycle2H3: "Biomarcadores plasmáticos",
-      cycle2P: "Lemos essa mudança sem abrir o crânio — quantificando o estado do cérebro a partir de uma coleta de sangue, para que o efeito vire um número que dá para acompanhar ao longo do tempo.",
+      cycle2P: "Por meio de uma simples amostra de sangue, podemos identificar biomarcadores plasmáticos que possibilitam a detecção precoce da doença de Alzheimer.",
       cycle2Foot: "Cérebro → sangue",
 
       cycle3Tag: "Provar",
-      cycle3H3: "Edição gênica com CRISPR",
-      cycle3P: "Editamos o gene-alvo para testar a causalidade diretamente — transformando uma correlação no sangue em um mecanismo que podemos ligar e desligar na fonte.",
+      cycle3H3: "Edição epigenômica com CRISPR",
+      cycle3P: "Usando edição epigenômica baseada em CRISPR, podemos regular com precisão a atividade gênica sem alterar a sequência de DNA, explorando novas estratégias terapêuticas para a doença de Alzheimer.",
       cycle3Foot: "Sangue → gene",
 
       imagingAriaLabel: "Imagem de imunofluorescência",
