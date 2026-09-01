@@ -387,32 +387,19 @@ img { max-width: 100%; display: block; }
   padding: 34px 30px 32px;
   box-shadow: var(--shadow-card);
 }
-.cycle-card-head { display: flex; align-items: center; justify-content: space-between; }
-.cycle-num {
+.cycle-card-head { position: relative; z-index: 1; }
+.cycle-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  color: var(--white);
-  font-family: 'Spectral', serif;
-  font-size: 24px;
-  position: relative;
-  z-index: 1;
+  width: 52px;
+  height: 52px;
+  color: var(--navy-900);
 }
-.cycle-num--1 { background: var(--navy-900); }
-.cycle-num--2 { background: var(--indigo-800); }
-.cycle-num--3 { background: var(--indigo-700); }
-.cycle-tag {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
-  letter-spacing: .26em;
-  text-transform: uppercase;
+.cycle-icon svg {
+  width: 100%;
+  height: 100%;
 }
-.cycle-tag--1 { color: #00a0c4; }
-.cycle-tag--2 { color: var(--violet); }
-.cycle-tag--3 { color: #d63aa0; }
 .cycle-card h3 {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
@@ -429,14 +416,6 @@ img { max-width: 100%; display: block; }
   line-height: 1.6;
   color: var(--gray-600);
   margin: 12px 0 0;
-}
-.cycle-card-foot {
-  margin-top: 22px;
-  padding-top: 16px;
-  border-top: 1px solid var(--gray-100);
-  font-family: 'Jost', sans-serif;
-  font-size: 14px;
-  color: var(--text-muted);
 }
 
 /* ---------- Imaging split ---------- */
