@@ -27,20 +27,14 @@
       cycleH2: "How we investigate Alzheimer's disease.",
       cycleP: "We investigate how physical exercise affects the brain, translate that effect into blood-based biomarkers, and use gene editing to establish causality, building the evidence needed for earlier detection and prevention of Alzheimer's disease.",
 
-      cycle1Tag: "Discover",
       cycle1H3: "Exerkines",
       cycle1P: "We investigate how exercise-released molecules, known as exerkines, influence brain health and protect against Alzheimer's disease, as well as their potential transport via extracellular vesicles.",
-      cycle1Foot: "Whole body → brain",
 
-      cycle2Tag: "Measure",
       cycle2H3: "Plasma biomarkers",
       cycle2P: "Through a simple blood sample, we can identify plasma biomarkers that may enable the early detection of Alzheimer's disease.",
-      cycle2Foot: "Brain → blood",
 
-      cycle3Tag: "Prove",
       cycle3H3: "CRISPR epigenome editing",
       cycle3P: "Using CRISPR-based epigenome editing, we can precisely regulate gene activity without altering the DNA sequence, exploring new therapeutic strategies for Alzheimer's disease.",
-      cycle3Foot: "Blood → gene",
 
       imagingAriaLabel: "Immunofluorescence imaging",
       imagingEyebrow: "Imaging the loop",
@@ -213,20 +207,14 @@
       cycleH2: "Como investigamos a doença de Alzheimer.",
       cycleP: "Investigamos como o exercício físico afeta o cérebro, traduzimos esse efeito em biomarcadores sanguíneos e usamos edição gênica para estabelecer causalidade, construindo as evidências necessárias para a detecção precoce e a prevenção da doença de Alzheimer.",
 
-      cycle1Tag: "Descobrir",
       cycle1H3: "Exerkines",
       cycle1P: "Investigamos como moléculas liberadas pelo exercício físico, conhecidas como exerkines, influenciam a saúde cerebral e protegem contra a doença de Alzheimer, além de seu possível transporte por vesículas extracelulares.",
-      cycle1Foot: "Corpo inteiro → cérebro",
 
-      cycle2Tag: "Medir",
       cycle2H3: "Biomarcadores plasmáticos",
       cycle2P: "Por meio de uma simples amostra de sangue, podemos identificar biomarcadores plasmáticos que possibilitam a detecção precoce da doença de Alzheimer.",
-      cycle2Foot: "Cérebro → sangue",
 
-      cycle3Tag: "Provar",
       cycle3H3: "Edição epigenômica com CRISPR",
       cycle3P: "Usando edição epigenômica baseada em CRISPR, podemos regular com precisão a atividade gênica sem alterar a sequência de DNA, explorando novas estratégias terapêuticas para a doença de Alzheimer.",
-      cycle3Foot: "Sangue → gene",
 
       imagingAriaLabel: "Imagem de imunofluorescência",
       imagingEyebrow: "Visualizando o ciclo",
