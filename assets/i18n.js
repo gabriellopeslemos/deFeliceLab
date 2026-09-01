@@ -44,8 +44,8 @@
 
       imagingAriaLabel: "Immunofluorescence imaging",
       imagingEyebrow: "Imaging the loop",
-      imagingH2: "The evidence is visible — in the tissue itself.",
-      imagingP: "Immunofluorescence over a dark field is our strongest asset. Cyan and magenta channels resolve where signalling changes, cell by cell — the same molecular events we then track in blood and edit at the gene.",
+      imagingH2: "What we do",
+      imagingP: "Our mission is to improve lives by deepening our understanding of Alzheimer's disease, uncovering how physical exercise protects the brain, and identifying blood biomarkers that reveal the earliest signs of the disease. By advancing early detection and developing new treatment strategies, we aim for a future where aging does not mean losing our memory or cognitive abilities.",
       imagingNote: "Placeholder — pending real lab microscopy (AVIF/WebP, explicit dimensions, real alt text).",
 
       pubsEyebrow: "Selected work",
@@ -230,8 +230,8 @@
 
       imagingAriaLabel: "Imagem de imunofluorescência",
       imagingEyebrow: "Visualizando o ciclo",
-      imagingH2: "A evidência é visível — no próprio tecido.",
-      imagingP: "A imunofluorescência em campo escuro é nosso maior recurso. Os canais ciano e magenta revelam onde a sinalização muda, célula a célula — os mesmos eventos moleculares que depois rastreamos no sangue e editamos no gene.",
+      imagingH2: "O que fazemos",
+      imagingP: "Nossa missão é melhorar vidas aprofundando nossa compreensão sobre a doença de Alzheimer, desvendando como o exercício físico protege o cérebro e identificando biomarcadores sanguíneos que revelam os primeiros sinais da doença. Ao avançar na detecção precoce e no desenvolvimento de novas estratégias terapêuticas, buscamos um futuro em que envelhecer não signifique perder a memória ou as capacidades cognitivas.",
       imagingNote: "Placeholder — aguardando microscopia real do laboratório (AVIF/WebP, dimensões explícitas, alt text real).",
 
       pubsEyebrow: "Trabalhos selecionados",
