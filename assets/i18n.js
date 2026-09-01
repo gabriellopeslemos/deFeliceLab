@@ -60,6 +60,23 @@
       pubsAllH2: "Every publication, in one place.",
       pubsAllP: "The complete, continuously updated list of the lab's peer-reviewed work.",
 
+      pubsFiltersLegend: "Filter publications",
+      pubsFilterYearLabel: "Year",
+      pubsFilterAllYears: "All years",
+      pubsFilterJournalLabel: "Journal",
+      pubsFilterAllJournals: "All journals",
+      pubsFilterTagLabel: "Topic",
+      pubsFilterAllTags: "All topics",
+      pubsFilterClear: "Clear filters",
+      pubsResultsCountAll: "{n} publications",
+      pubsResultsCountFiltered: "{n} of {total} publications",
+      pubsEmptyFiltered: "No publications match these filters.",
+      pubsError: "Could not load publications right now.",
+      pubsErrorRetry: "Try again",
+      pubsYearSrLabel: "Year:",
+      pubsCitesSrLabel: "Citations:",
+      pubsOpensNewTab: "Opens in a new tab.",
+
       fundingAriaLabel: "Funding",
       fundingEyebrow: "Funding",
 
@@ -246,6 +263,23 @@
       pubsAllH2: "Todas as publicações, em um só lugar.",
       pubsAllP: "A lista completa e continuamente atualizada dos trabalhos revisados por pares do laboratório.",
 
+      pubsFiltersLegend: "Filtrar publicações",
+      pubsFilterYearLabel: "Ano",
+      pubsFilterAllYears: "Todos os anos",
+      pubsFilterJournalLabel: "Periódico",
+      pubsFilterAllJournals: "Todos os periódicos",
+      pubsFilterTagLabel: "Tema",
+      pubsFilterAllTags: "Todos os temas",
+      pubsFilterClear: "Limpar filtros",
+      pubsResultsCountAll: "{n} publicações",
+      pubsResultsCountFiltered: "{n} de {total} publicações",
+      pubsEmptyFiltered: "Nenhuma publicação corresponde a esses filtros.",
+      pubsError: "Não foi possível carregar as publicações agora.",
+      pubsErrorRetry: "Tentar novamente",
+      pubsYearSrLabel: "Ano:",
+      pubsCitesSrLabel: "Citações:",
+      pubsOpensNewTab: "Abre em uma nova aba.",
+
       fundingAriaLabel: "Financiamento",
       fundingEyebrow: "Financiamento",
 
@@ -427,6 +461,13 @@
 
     setStoredLang(lang);
   }
+
+  // Read-only access for other modules (e.g. pubs.js) that build UI text
+  // dynamically and need the current dictionary instead of static data-i18n.
+  window.deFeliceI18n = {
+    t: function (key) { return translations[currentLang] ? translations[currentLang][key] : undefined; },
+    lang: function () { return currentLang; }
+  };
 
   document.addEventListener('DOMContentLoaded', function () {
     applyLanguage(getStoredLang());
