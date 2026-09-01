@@ -91,15 +91,6 @@
       studyHeroCta1: 'Join our study <span class="arrow" aria-hidden="true">→</span>',
       studyHeroCta2: "About the research",
 
-      spotlightName: "Brain Health &amp; Smartwatch Tracking",
-      spotlightIntro: "A 12-month study following adults in Kingston through smartwatch monitoring, cognitive assessments, and blood and saliva samples.",
-      spotlightStat1Label: "Duration",
-      spotlightStat1Value: "12 months",
-      spotlightStat2Label: "Visits",
-      spotlightStat2Value: "5 visits",
-      spotlightStat3Label: "Age",
-      spotlightStat3Value: "18+",
-
       applyEyebrow: "Now recruiting",
       applyH2: "Brain Health &amp; Smartwatch Tracking",
       applyP: "Participation lasts about 12 months, with follow-up visits every three months at our research site in Kingston, Ontario. Your participation can help researchers better understand the factors linked to healthy cognitive aging and support the development of more accessible ways to study brain health in the future.",
@@ -293,15 +284,6 @@
       studyHeroLead: "Ajude-nos a entender como padrões do dia a dia, como sono, atividade física e saúde geral, se relacionam com a resiliência cerebral e o envelhecimento saudável.",
       studyHeroCta1: 'Participe do nosso estudo <span class="arrow" aria-hidden="true">→</span>',
       studyHeroCta2: "Sobre a pesquisa",
-
-      spotlightName: "Saúde Cerebral e Monitoramento por Smartwatch",
-      spotlightIntro: "Um estudo de 12 meses que acompanha adultos em Kingston por meio de monitoramento por smartwatch, avaliações cognitivas e amostras de sangue e saliva.",
-      spotlightStat1Label: "Duração",
-      spotlightStat1Value: "12 meses",
-      spotlightStat2Label: "Visitas",
-      spotlightStat2Value: "5 visitas",
-      spotlightStat3Label: "Idade",
-      spotlightStat3Value: "18+",
 
       applyEyebrow: "Recrutamento aberto",
       applyH2: "Saúde Cerebral e Monitoramento por Smartwatch",
