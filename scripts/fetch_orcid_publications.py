@@ -26,6 +26,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 TOKEN_CACHE_PATH = Path(__file__).resolve().parent / ".token_cache.json"
 OVERRIDES_PATH = Path(__file__).resolve().parent / "publications-overrides.json"
 OUTPUT_PATH = REPO_ROOT / "assets" / "publications.json"
+RAW_OUTPUT_PATH = Path(__file__).resolve().parent / "publications-raw.json"
 
 TOKEN_URL = "https://orcid.org/oauth/token"
 WORKS_URL_TEMPLATE = "https://pub.orcid.org/v3.0/{orcid_id}/works"
@@ -108,7 +109,9 @@ def get_access_token(client_id: str, client_secret: str) -> str:
     return access_token
 
 
-def fetch_works_for_orcid(orcid_id: str, access_token: str) -> list[dict[str, Any]]:
+def fetch_works_for_orcid(
+    orcid_id: str, access_token: str
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     headers = {
         "Authorization": f"Bearer {access_token}",
         "Accept": "application/json",
@@ -131,20 +134,23 @@ def fetch_works_for_orcid(orcid_id: str, access_token: str) -> list[dict[str, An
         summaries.append(group_summaries[0])
 
     put_codes = [s["put-code"] for s in summaries if s.get("put-code") is not None]
-    full_works = fetch_full_works(orcid_id, put_codes, headers)
+    full_works_raw = fetch_full_works_raw(orcid_id, put_codes, headers)
+    full_works = index_full_works(full_works_raw)
 
     entries: list[dict[str, Any]] = []
     for summary in summaries:
         full_work = full_works.get(summary.get("put-code"))
         entries.append(parse_work_summary(summary, full_work))
-    return entries
+
+    raw = {"works_summary": payload, "full_works_bulk": full_works_raw}
+    return entries, raw
 
 
-def fetch_full_works(
+def fetch_full_works_raw(
     orcid_id: str, put_codes: list[int], headers: dict[str, str]
-) -> dict[int, dict[str, Any]]:
-    """Bulk-fetch full work records (needed for contributors/authors, absent from summaries)."""
-    results: dict[int, dict[str, Any]] = {}
+) -> list[dict[str, Any]]:
+    """Bulk-fetch the raw full-work API responses (needed for contributors/authors, absent from summaries)."""
+    raw_payloads: list[dict[str, Any]] = []
     for i in range(0, len(put_codes), WORKS_BULK_CHUNK_SIZE):
         chunk = put_codes[i : i + WORKS_BULK_CHUNK_SIZE]
         url = WORKS_BULK_URL_TEMPLATE.format(
@@ -152,7 +158,13 @@ def fetch_full_works(
         )
         response = requests.get(url, headers=headers, timeout=30)
         response.raise_for_status()
-        payload = response.json()
+        raw_payloads.append(response.json())
+    return raw_payloads
+
+
+def index_full_works(raw_payloads: list[dict[str, Any]]) -> dict[int, dict[str, Any]]:
+    results: dict[int, dict[str, Any]] = {}
+    for payload in raw_payloads:
         for item in payload.get("bulk", []):
             work = item.get("work")
             if work and work.get("put-code") is not None:
@@ -259,11 +271,20 @@ def main() -> None:
     access_token = get_access_token(config["client_id"], config["client_secret"])
 
     all_entries: list[dict[str, Any]] = []
+    raw_by_orcid: dict[str, Any] = {}
     for i, orcid_id in enumerate(config["orcid_ids"]):
         print(f"Fetching works for {orcid_id}...")
-        all_entries.extend(fetch_works_for_orcid(orcid_id, access_token))
+        entries, raw = fetch_works_for_orcid(orcid_id, access_token)
+        all_entries.extend(entries)
+        raw_by_orcid[orcid_id] = raw
         if i < len(config["orcid_ids"]) - 1:
             time.sleep(0.5)
+
+    RAW_OUTPUT_PATH.write_text(
+        json.dumps(raw_by_orcid, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    print(f"Wrote raw ORCID API responses to {RAW_OUTPUT_PATH}")
 
     deduped = dedupe_and_sort(all_entries)
     overrides = load_overrides()

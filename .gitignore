@@ -1,3 +1,4 @@
 .env
 .venv/
 scripts/.token_cache.json
+scripts/publications-raw.json

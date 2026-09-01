@@ -49,7 +49,7 @@
       imagingNote: "Placeholder — pending real lab microscopy (AVIF/WebP, explicit dimensions, real alt text).",
 
       pubsEyebrow: "Selected work",
-      pubsH2: "Publications that carry the argument.",
+      pubsH2: "Featured Publications",
       pubsAllLink: "All publications →",
       pubsLoading: "Loading publications from ORCID…",
 

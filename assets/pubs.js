@@ -64,7 +64,7 @@
     });
   }
 
-  const lists = document.querySelectorAll(".pubs-list");
+  const lists = document.querySelectorAll(".pubs-list:not([data-pubs-static])");
   if (lists.length) {
     fetch(PUBLICATIONS_URL)
       .then((response) => {

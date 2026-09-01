@@ -1,0 +1,1313 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          29
+        ]
+      ],
+      "date-time": "2026-08-29T01:32:00Z",
+      "timestamp": 1787967120821,
+      "version": "build-2784847793"
+    },
+    "reference-count": 70,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2019-01-01T00:00:00Z",
+          "timestamp": 1546300800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Med"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1038/s41591-018-0275-4",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          18
+        ]
+      ],
+      "date-time": "2018-12-18T06:14:18Z",
+      "timestamp": 1545113658000
+    },
+    "page": "165-175",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 826,
+    "title": [
+      "Exercise-linked FNDC5/irisin rescues synaptic plasticity and memory defects in Alzheimer’s models"
+    ],
+    "prefix": "10.1038",
+    "volume": "25",
+    "author": [
+      {
+        "given": "Mychael V.",
+        "family": "Lourenco",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rudimar L.",
+        "family": "Frozza",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Guilherme B.",
+        "family": "de Freitas",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hong",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Grasielle C.",
+        "family": "Kincheski",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Felipe C.",
+        "family": "Ribeiro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rafaella A.",
+        "family": "Gonçalves",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Julia R.",
+        "family": "Clarke",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Danielle",
+        "family": "Beckman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Agnieszka",
+        "family": "Staniszewski",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hanna",
+        "family": "Berman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lorena A.",
+        "family": "Guerra",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Letícia",
+        "family": "Forny-Germano",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shelby",
+        "family": "Meier",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Donna M.",
+        "family": "Wilcock",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jorge M.",
+        "family": "de Souza",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Soniza",
+        "family": "Alves-Leon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vania F.",
+        "family": "Prado",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3028-5778",
+        "authenticated-orcid": false,
+        "given": "Marco A. M.",
+        "family": "Prado",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6341-679X",
+        "authenticated-orcid": false,
+        "given": "Jose F.",
+        "family": "Abisambra",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fernanda",
+        "family": "Tovar-Moll",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paulo",
+        "family": "Mattos",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6335-164X",
+        "authenticated-orcid": false,
+        "given": "Ottavio",
+        "family": "Arancio",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7160-9866",
+        "authenticated-orcid": false,
+        "given": "Sergio T.",
+        "family": "Ferreira",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fernanda G.",
+        "family": "De Felice",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2019,
+          1,
+          7
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "275_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "63",
+        "DOI": "10.1016/j.jalz.2012.11.007",
+        "volume": "9",
+        "author": "M Prince",
+        "year": "2013",
+        "unstructured": "Prince, M. et al. The global prevalence of dementia: a systematic review and metaanalysis. Alzheimers Dement. 9, 63–75.e62 (2013).",
+        "journal-title": "Alzheimers Dement."
+      },
+      {
+        "key": "275_CR2",
+        "first-page": "191",
+        "volume": "9",
+        "author": "ST Ferreira",
+        "year": "2015",
+        "unstructured": "Ferreira, S. T., Lourenco, M. V., Oliveira, M. M. & De Felice, F. G. Soluble amyloid-β oligomers as synaptotoxins leading to cognitive impairment in Alzheimer’s disease. Front. Cell. Neurosci. 9, 191 (2015).",
+        "journal-title": "Front. Cell. Neurosci."
+      },
+      {
+        "key": "275_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "225",
+        "DOI": "10.1038/nrn3209",
+        "volume": "13",
+        "author": "AM Fernandez",
+        "year": "2012",
+        "unstructured": "Fernandez, A. M. & Torres-Alemán, I. The many faces of insulin-like peptide signalling in the brain. Nat. Rev. Neurosci. 13, 225–239 (2012).",
+        "journal-title": "Nat. Rev. Neurosci."
+      },
+      {
+        "key": "275_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "660",
+        "DOI": "10.1038/nrn4019",
+        "volume": "16",
+        "author": "GJ Biessels",
+        "year": "2015",
+        "unstructured": "Biessels, G. J. & Reagan, L. P. Hippocampal insulin resistance and cognitive dysfunction. Nat. Rev. Neurosci. 16, 660–671 (2015).",
+        "journal-title": "Nat. Rev. Neurosci."
+      },
+      {
+        "key": "275_CR5",
+        "doi-asserted-by": "crossref",
+        "first-page": "15544",
+        "DOI": "10.1073/pnas.1521416112",
+        "volume": "112",
+        "author": "BS McEwen",
+        "year": "2015",
+        "unstructured": "McEwen, B. S. Preserving neuroplasticity: role of glucocorticoids and neurotrophins via phosphorylation. Proc. Natl Acad. Sci. USA 112, 15544–15545 (2015).",
+        "journal-title": "Proc. Natl Acad. Sci. USA"
+      },
+      {
+        "key": "275_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1173",
+        "DOI": "10.1038/nm919",
+        "volume": "9",
+        "author": "MJ During",
+        "year": "2003",
+        "unstructured": "During, M. J. et al. Glucagon-like peptide-1 receptor is involved in learning and neuroprotection. Nat. Med. 9, 1173–1179 (2003).",
+        "journal-title": "Nat. Med."
+      },
+      {
+        "key": "275_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "708",
+        "DOI": "10.1016/j.neuron.2008.04.014",
+        "volume": "58",
+        "author": "SL Chiu",
+        "year": "2008",
+        "unstructured": "Chiu, S.-L., Chen, C.-M. & Cline, H. T. Insulin receptor signaling regulates synapse number, dendritic plasticity, and circuit function in vivo. Neuron 58, 708–719 (2008).",
+        "journal-title": "Neuron"
+      },
+      {
+        "key": "275_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "3927",
+        "DOI": "10.2337/db15-0596",
+        "volume": "64",
+        "author": "CA Grillo",
+        "year": "2015",
+        "unstructured": "Grillo, C. A. et al. Hippocampal insulin resistance impairs spatial learning and synaptic plasticity. Diabetes 64, 3927–3936 (2015).",
+        "journal-title": "Diabetes"
+      },
+      {
+        "key": "275_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "20130155",
+        "DOI": "10.1098/rstb.2013.0155",
+        "volume": "369",
+        "author": "AJ Irving",
+        "year": "2013",
+        "unstructured": "Irving, A. J. & Harvey, J. Leptin regulation of hippocampal synaptic function in health and disease. Philos. Trans. R. Soc. Lond. B 369, 20130155 (2013).",
+        "journal-title": "Philos. Trans. R. Soc. Lond. B"
+      },
+      {
+        "key": "275_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "37",
+        "DOI": "10.1016/j.pneurobio.2015.03.003",
+        "volume": "129",
+        "author": "MV Lourenco",
+        "year": "2015",
+        "unstructured": "Lourenco, M. V., Ferreira, S. T. & De Felice, F. G. Neuronal stress signaling and eIF2α phosphorylation as molecular links between Alzheimer’s disease and diabetes. Prog. Neurobiol. 129, 37–57 (2015).",
+        "journal-title": "Prog. Neurobiol."
+      },
+      {
+        "key": "275_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "1339",
+        "DOI": "10.1172/JCI57256",
+        "volume": "122",
+        "author": "TR Bomfim",
+        "year": "2012",
+        "unstructured": "Bomfim, T. R. et al. An anti-diabetes agent protects the mouse brain from defective insulin signaling caused by Alzheimer’s disease-associated Aβ oligomers. J. Clin. Invest. 122, 1339–1353 (2012).",
+        "journal-title": "J. Clin. Invest."
+      },
+      {
+        "key": "275_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1316",
+        "DOI": "10.1172/JCI59903",
+        "volume": "122",
+        "author": "K Talbot",
+        "year": "2012",
+        "unstructured": "Talbot, K. et al. Demonstrated brain insulin resistance in Alzheimer’s disease patients is associated with IGF-1 resistance, IRS-1 dysregulation, and cognitive decline. J. Clin. Invest. 122, 1316–1338 (2012).",
+        "journal-title": "J. Clin. Invest."
+      },
+      {
+        "key": "275_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "S26",
+        "DOI": "10.1016/j.jalz.2013.12.004",
+        "volume": "10",
+        "author": "FG De Felice",
+        "year": "2014",
+        "unstructured": "De Felice, F. G., Lourenco, M. V. & Ferreira, S. T. How does brain insulin resistance develop in Alzheimer’s disease? Alzheimers Dement. 10, S26–S32 (2014).",
+        "journal-title": "Alzheimers Dement."
+      },
+      {
+        "key": "275_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "426",
+        "DOI": "10.1038/485426a",
+        "volume": "485",
+        "author": "M Wadman",
+        "year": "2012",
+        "unstructured": "Wadman, M. US government sets out Alzheimer’s plan. Nature 485, 426–427 (2012).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "275_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "531",
+        "DOI": "10.1172/JCI64595",
+        "volume": "123",
+        "author": "FG De Felice",
+        "year": "2013",
+        "unstructured": "De Felice, F. G. Alzheimer’s disease and insulin resistance: translating basic science into clinical applications. J. Clin. Invest. 123, 531–539 (2013).",
+        "journal-title": "J. Clin. Invest."
+      },
+      {
+        "key": "275_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "463",
+        "DOI": "10.1038/nature10777",
+        "volume": "481",
+        "author": "P Boström",
+        "year": "2012",
+        "unstructured": "Boström, P. et al. A PGC1-α-dependent myokine that drives brown-fat-like development of white fat and thermogenesis. Nature 481, 463–468 (2012).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "275_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "734",
+        "DOI": "10.1016/j.cmet.2015.08.001",
+        "volume": "22",
+        "author": "MP Jedrychowski",
+        "year": "2015",
+        "unstructured": "Jedrychowski, M. P. et al. Detection and quantitation of circulating human irisin by tandem mass spectrometry. Cell Metab. 22, 734–740 (2015).",
+        "journal-title": "Cell Metab."
+      },
+      {
+        "key": "275_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "649",
+        "DOI": "10.1016/j.cmet.2013.09.008",
+        "volume": "18",
+        "author": "CD Wrann",
+        "year": "2013",
+        "unstructured": "Wrann, C.D. et al. Exercise induces hippocampal BDNF through a PGC-1α/FNDC5 pathway. Cell Metab. 18, 649–659 (2013).",
+        "journal-title": "Cell Metab."
+      },
+      {
+        "key": "275_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "eaao6298",
+        "DOI": "10.1126/scitranslmed.aao6298",
+        "volume": "9",
+        "author": "K Chen",
+        "year": "2017",
+        "unstructured": "Chen, K. et al. Irisin protects mitochondria function during pulmonary ischemia/reperfusion injury. Sci. Transl. Med. 9, eaao6298 (2017).",
+        "journal-title": "Sci. Transl. Med."
+      },
+      {
+        "key": "275_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "302",
+        "DOI": "10.1016/j.cmet.2013.12.017",
+        "volume": "19",
+        "author": "P Lee",
+        "year": "2014",
+        "unstructured": "Lee, P. et al. Irisin and FGF21 are cold-induced endocrine activators of brown fat function in humans. Cell Metab. 19, 302–309 (2014).",
+        "journal-title": "Cell Metab."
+      },
+      {
+        "key": "275_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "33738",
+        "DOI": "10.1074/jbc.M113.516641",
+        "volume": "288",
+        "author": "MA Schumacher",
+        "year": "2013",
+        "unstructured": "Schumacher, M. A., Chinnam, N., Ohashi, T., Shah, R. S. & Erickson, H. P. The structure of irisin reveals a novel intersubunit β-sheet fibronectin type III (FNIII) dimer: implications for receptor activation. J. Biol. Chem. 288, 33738–33744 (2013).",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "275_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "a0063381",
+        "DOI": "10.1101/cshperspect.a006338",
+        "volume": "2",
+        "author": "L Mucke",
+        "year": "2012",
+        "unstructured": "Mucke, L. & Selkoe, D. J. Neurotoxicity of amyloid β-protein: synaptic and network dysfunction. Cold Spring Harb. Perspect. Med. 2, a0063381 (2012).",
+        "journal-title": "Cold Spring Harb. Perspect. Med."
+      },
+      {
+        "key": "275_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "7436",
+        "DOI": "10.1074/jbc.M111.298471",
+        "volume": "287",
+        "author": "A Sebollela",
+        "year": "2012",
+        "unstructured": "Sebollela, A. et al. Amyloid-β oligomers induce differential gene expression in adult human brain slices. J. Biol. Chem. 287, 7436–7445 (2012).",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "275_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "12157",
+        "DOI": "10.1073/pnas.1516622112",
+        "volume": "112",
+        "author": "G Colaianni",
+        "year": "2015",
+        "unstructured": "Colaianni, G. et al. The myokine irisin increases cortical bone mass. Proc. Natl Acad. Sci. USA 112, 12157–12162 (2015).",
+        "journal-title": "Proc. Natl Acad. Sci. USA"
+      },
+      {
+        "key": "275_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "9626",
+        "DOI": "10.1523/JNEUROSCI.0482-13.2013",
+        "volume": "33",
+        "author": "CP Figueiredo",
+        "year": "2013",
+        "unstructured": "Figueiredo, C. P. et al. Memantine rescues transient cognitive impairment caused by high-molecular-weight Aβ oligomers but not the persistent impairment induced by low-molecular-weight oligomers. J. Neurosci. 33, 9626–9634 (2013).",
+        "journal-title": "J. Neurosci."
+      },
+      {
+        "key": "275_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "831",
+        "DOI": "10.1016/j.cmet.2013.11.002",
+        "volume": "18",
+        "author": "MV Lourenco",
+        "year": "2013",
+        "unstructured": "Lourenco, M. V. et al. TNF-α mediates PKR-dependent memory impairment and brain IRS-1 inhibition induced by Alzheimer’s β-amyloid oligomers in mice and monkeys. Cell Metab. 18, 831–843 (2013).",
+        "journal-title": "Cell Metab."
+      },
+      {
+        "key": "275_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "157",
+        "DOI": "10.1016/S1389-0344(01)00067-3",
+        "volume": "17",
+        "author": "JL Jankowsky",
+        "year": "2001",
+        "unstructured": "Jankowsky, J. L. et al. Co-expression of multiple transgenes in mouse CNS: a comparison of strategies. Biomol. Eng. 17, 157–165 (2001).",
+        "journal-title": "Biomol. Eng."
+      },
+      {
+        "key": "275_CR28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ncomms2238",
+        "volume": "3",
+        "author": "A Cheng",
+        "year": "2012",
+        "unstructured": "Cheng, A. et al. Involvement of PGC-1α in the formation and maintenance of neuronal dendritic spines. Nat. Commun. 3, 1250 (2012).",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "275_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "97",
+        "DOI": "10.1038/nm0198-097",
+        "volume": "4",
+        "author": "L Holcomb",
+        "year": "1998",
+        "unstructured": "Holcomb, L. et al. Accelerated Alzheimer-type phenotype in transgenic mice carrying both mutant amyloid precursor protein and presenilin 1 transgenes. Nat. Med. 4, 97–100 (1998).",
+        "journal-title": "Nat. Med."
+      },
+      {
+        "key": "275_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "1299",
+        "DOI": "10.1038/nn.3486",
+        "volume": "16",
+        "author": "T Ma",
+        "year": "2013",
+        "unstructured": "Ma, T. et al. Suppression of eIF2α kinases alleviates Alzheimer’s disease-related plasticity and memory deficits. Nat. Neurosci. 16, 1299–1305 (2013).",
+        "journal-title": "Nat. Neurosci."
+      },
+      {
+        "key": "275_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "19",
+        "DOI": "10.1016/j.neurobiolaging.2016.02.005",
+        "volume": "41",
+        "author": "W Yang",
+        "year": "2016",
+        "unstructured": "Yang, W. et al. Repression of the eIF2α kinase PERK alleviates mGluR-LTD impairments in a mouse model of Alzheimer’s disease. Neurobiol. Aging 41, 19–24 (2016).",
+        "journal-title": "Neurobiol. Aging"
+      },
+      {
+        "key": "275_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "93",
+        "DOI": "10.1016/j.nlm.2013.04.013",
+        "volume": "105",
+        "author": "MA Trinh",
+        "year": "2013",
+        "unstructured": "Trinh, M. A. & Klann, E. Translational control by eIF2α kinases in long-lasting synaptic plasticity and long-term memory. Neurobiol. Learn. Mem. 105, 93–99 (2013).",
+        "journal-title": "Neurobiol. Learn. Mem."
+      },
+      {
+        "key": "275_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "1624",
+        "DOI": "10.1172/JCI22831",
+        "volume": "114",
+        "author": "B Gong",
+        "year": "2004",
+        "unstructured": "Gong, B. et al. Persistent improvement in synaptic and cognitive functions in an Alzheimer mouse model after rolipram treatment. J. Clin. Invest. 114, 1624–1634 (2004).",
+        "journal-title": "J. Clin. Invest."
+      },
+      {
+        "key": "275_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "13217",
+        "DOI": "10.1073/pnas.172504199",
+        "volume": "99",
+        "author": "OV Vitolo",
+        "year": "2002",
+        "unstructured": "Vitolo, O. V. et al. Amyloid β-peptide inhibition of the PKA/CREB pathway and long-term potentiation: reversibility by drugs that enhance cAMP signaling. Proc. Natl Acad. Sci. USA 99, 13217–13221 (2002).",
+        "journal-title": "Proc. Natl Acad. Sci. USA"
+      },
+      {
+        "key": "275_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "790",
+        "DOI": "10.1111/jnc.14107",
+        "volume": "142",
+        "author": "N Schaefer",
+        "year": "2017",
+        "unstructured": "Schaefer, N. et al. The malleable brain: plasticity of neural circuits and behavior: a review from students to students. J. Neurochem. 142, 790–811 (2017).",
+        "journal-title": "J. Neurochem."
+      },
+      {
+        "key": "275_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "364ps318",
+        "DOI": "10.1126/scitranslmed.aal2074",
+        "volume": "8",
+        "author": "A Katsnelson",
+        "year": "2016",
+        "unstructured": "Katsnelson, A., De Strooper, B. & Zoghbi, H. Y. Neurodegeneration: from cellular concepts to clinical applications. Sci. Transl. Med. 8, 364ps318 (2016).",
+        "journal-title": "Sci. Transl. Med."
+      },
+      {
+        "key": "275_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "789",
+        "DOI": "10.1126/science.1074069",
+        "volume": "298",
+        "author": "DJ Selkoe",
+        "year": "2002",
+        "unstructured": "Selkoe, D. J. Alzheimer’s disease is a synaptic failure. Science 298, 789–791 (2002).",
+        "journal-title": "Science"
+      },
+      {
+        "key": "275_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "785",
+        "DOI": "10.1111/jnc.13713",
+        "volume": "138",
+        "author": "K Lepeta",
+        "year": "2016",
+        "unstructured": "Lepeta, K. et al. Synaptopathies: synaptic dysfunction in neurological disorders: a review from students to students. J. Neurochem. 138, 785–805 (2016).",
+        "journal-title": "J. Neurochem."
+      },
+      {
+        "key": "275_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "514",
+        "DOI": "10.2337/db13-1106",
+        "volume": "63",
+        "author": "Y Zhang",
+        "year": "2014",
+        "unstructured": "Zhang, Y. et al. Irisin stimulates browning of white adipocytes through mitogen-activated protein kinase p38 MAP kinase and ERK MAP kinase signaling. Diabetes 63, 514–525 (2014).",
+        "journal-title": "Diabetes"
+      },
+      {
+        "key": "275_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "E9",
+        "DOI": "10.1038/nature11364",
+        "volume": "488",
+        "author": "JA Timmons",
+        "year": "2012",
+        "unstructured": "Timmons, J. A., Baar, K., Davidsen, P. K. & Atherton, P. J. Is irisin a human exercise gene? Nature 488, E9–E10 (2012).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "275_CR41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep08889",
+        "volume": "5",
+        "author": "E Albrecht",
+        "year": "2015",
+        "unstructured": "Albrecht, E. et al. Irisin: a myth rather than an exercise-inducible myokine. Sci. Rep. 5, 8889 (2015).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "275_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "567",
+        "DOI": "10.1016/S0896-6273(00)80188-9",
+        "volume": "17",
+        "author": "KC Martin",
+        "year": "1996",
+        "unstructured": "Martin, K. C. & Kandel, E. R. Cell adhesion molecules, CREB, and the formation of new synaptic connections. Neuron 17, 567–570 (1996).",
+        "journal-title": "Neuron"
+      },
+      {
+        "key": "275_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "10487",
+        "DOI": "10.1073/pnas.1805668115",
+        "volume": "115",
+        "author": "K Suwabe",
+        "year": "2018",
+        "unstructured": "Suwabe, K. et al. Rapid stimulation of human dentate gyrus function with acute mild exercise. Proc. Natl Acad. Sci. USA 115, 10487–10492 (2018).",
+        "journal-title": "Proc. Natl Acad. Sci. USA"
+      },
+      {
+        "key": "275_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "15139",
+        "DOI": "10.1523/JNEUROSCI.2814-14.2014",
+        "volume": "34",
+        "author": "H van Praag",
+        "year": "2014",
+        "unstructured": "van Praag, H., Fleshner, M., Schwartz, M. W. & Mattson, M. P. Exercise, energy intake, glucose homeostasis, and the brain. J. Neurosci. 34, 15139–15149 (2014).",
+        "journal-title": "J. Neurosci."
+      },
+      {
+        "key": "275_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "4",
+        "DOI": "10.1016/j.cmet.2015.05.011",
+        "volume": "22",
+        "author": "PD Neufer",
+        "year": "2015",
+        "unstructured": "Neufer, P. D. et al. Understanding the cellular and molecular mechanisms of physical activity-induced health benefits. Cell Metab. 22, 4–11 (2015).",
+        "journal-title": "Cell Metab."
+      },
+      {
+        "key": "275_CR46",
+        "first-page": "71",
+        "volume": "67",
+        "author": "LD Baker",
+        "year": "2010",
+        "unstructured": "Baker, L. D. et al. Effects of aerobic exercise on mild cognitive impairment: a controlled trial. Arch. Neurol. 67, 71–79 (2010).",
+        "journal-title": "Arch. Neurol."
+      },
+      {
+        "key": "275_CR47",
+        "doi-asserted-by": "publisher",
+        "first-page": "1323",
+        "DOI": "10.1212/WNL.0b013e3182535d35",
+        "volume": "78",
+        "author": "AS Buchman",
+        "year": "2012",
+        "unstructured": "Buchman, A. S. et al. Total daily physical activity and the risk of AD and cognitive decline in older adults. Neurology 78, 1323–1329 (2012).",
+        "journal-title": "Neurology"
+      },
+      {
+        "key": "275_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "1753",
+        "DOI": "10.1212/WNL.0000000000000964",
+        "volume": "83",
+        "author": "OC Okonkwo",
+        "year": "2014",
+        "unstructured": "Okonkwo, O. C. et al. Physical activity attenuates age-related biomarker alterations in preclinical AD. Neurology 83, 1753–1760 (2014).",
+        "journal-title": "Neurology"
+      },
+      {
+        "key": "275_CR49",
+        "doi-asserted-by": "publisher",
+        "first-page": "1427",
+        "DOI": "10.1016/j.jalz.2018.06.3059",
+        "volume": "14",
+        "author": "S Müller",
+        "year": "2018",
+        "unstructured": "Müller, S. Relationship between physical activity, cognition, and Alzheimer pathology in autosomal dominant Alzheimer’s disease. Alzheimers Dement. 14, 1427–1437 (2018).",
+        "journal-title": "Alzheimers Dement."
+      },
+      {
+        "key": "275_CR50",
+        "doi-asserted-by": "publisher",
+        "first-page": "706",
+        "DOI": "10.1016/j.cmet.2012.08.012",
+        "volume": "16",
+        "author": "MP Mattson",
+        "year": "2012",
+        "unstructured": "Mattson, M. P. Energy intake and exercise as determinants of brain health and vulnerability to injury and disease. Cell Metab. 16, 706–722 (2012).",
+        "journal-title": "Cell Metab."
+      },
+      {
+        "key": "275_CR51",
+        "doi-asserted-by": "publisher",
+        "first-page": "332",
+        "DOI": "10.1016/j.cmet.2016.05.025",
+        "volume": "24",
+        "author": "HY Moon",
+        "year": "2016",
+        "unstructured": "Moon, H. Y. et al. Running-induced systemic cathepsin B secretion is associated with memory function. Cell Metab. 24, 332–340 (2016).",
+        "journal-title": "Cell Metab."
+      },
+      {
+        "key": "275_CR52",
+        "doi-asserted-by": "publisher",
+        "first-page": "e15092",
+        "DOI": "10.7554/eLife.15092",
+        "volume": "5",
+        "author": "SF Sleiman",
+        "year": "2016",
+        "unstructured": "Sleiman, S. F. et al. Exercise promotes the expression of brain derived neurotrophic factor (BDNF) through the action of the ketone body β-hydroxybutyrate. eLife 5, e15092 (2016).",
+        "journal-title": "eLife"
+      },
+      {
+        "key": "275_CR53",
+        "doi-asserted-by": "publisher",
+        "first-page": "4171",
+        "DOI": "10.1002/pmic.200700573",
+        "volume": "7",
+        "author": "RW Smith",
+        "year": "2007",
+        "unstructured": "Smith, R. W., Wang, J., Bucking, C. P., Mothersill, C. E. & Seymour, C. B. Evidence for a protective response by the gill proteome of rainbow trout exposed to X-ray induced bystander signals. Proteomics 7, 4171–4180 (2007).",
+        "journal-title": "Proteomics"
+      },
+      {
+        "key": "275_CR54",
+        "doi-asserted-by": "publisher",
+        "first-page": "203",
+        "DOI": "10.1016/j.jneumeth.2018.05.021",
+        "volume": "307",
+        "author": "ND Mendes",
+        "year": "2018",
+        "unstructured": "Mendes, N. D. et al. Free-floating adult human brain-derived slice cultures as a model to study the neuronal impact of Alzheimer’s disease-associated Aβ oligomers. J. Neurosci. Meth. 307, 203–209 (2018).",
+        "journal-title": "J. Neurosci. Meth."
+      },
+      {
+        "key": "275_CR55",
+        "doi-asserted-by": "publisher",
+        "first-page": "96",
+        "DOI": "10.3389/fnagi.2015.00096",
+        "volume": "7",
+        "author": "C Drummond",
+        "year": "2015",
+        "unstructured": "Drummond, C. et al. Deficits in narrative discourse elicited by visual stimuli are already present in patients with mild cognitive impairment. Front. Aging Neurosci. 7, 96 (2015).",
+        "journal-title": "Front. Aging Neurosci."
+      },
+      {
+        "key": "275_CR56",
+        "doi-asserted-by": "publisher",
+        "first-page": "1053",
+        "DOI": "10.1038/mp.2012.168",
+        "volume": "18",
+        "author": "JH Ledo",
+        "year": "2013",
+        "unstructured": "Ledo, J. H. et al. Amyloid-β oligomers link depressive-like behavior and cognitive deficits in mice. Mol. Psychiatry 18, 1053–1054 (2013).",
+        "journal-title": "Mol. Psychiatry"
+      },
+      {
+        "key": "275_CR57",
+        "doi-asserted-by": "publisher",
+        "first-page": "12106",
+        "DOI": "10.1523/JNEUROSCI.1269-16.2016",
+        "volume": "36",
+        "author": "JH Ledo",
+        "year": "2016",
+        "unstructured": "Ledo, J. H. et al. Cross talk between brain innate immunity and serotonin signaling underlies depressive-like behavior induced by Alzheimer’s amyloid-β oligomers in mice. J. Neurosci. 36, 12106–12116 (2016).",
+        "journal-title": "J. Neurosci."
+      },
+      {
+        "key": "275_CR58",
+        "doi-asserted-by": "publisher",
+        "first-page": "2796",
+        "DOI": "10.1172/JCI34254",
+        "volume": "118",
+        "author": "F Trinchese",
+        "year": "2008",
+        "unstructured": "Trinchese, F. et al. Inhibition of calpains improves memory and synaptic transmission in a mouse model of Alzheimer disease. J. Clin. Invest. 118, 2796–2807 (2008).",
+        "journal-title": "J. Clin. Invest."
+      },
+      {
+        "key": "275_CR59",
+        "doi-asserted-by": "publisher",
+        "first-page": "1671",
+        "DOI": "10.1038/nprot.2006.275",
+        "volume": "1",
+        "author": "J Alamed",
+        "year": "2006",
+        "unstructured": "Alamed, J., Wilcock, D. M., Diamond, D. M., Gordon, M. N. & Morgan, D. Two-day radial-arm water maze learning and memory task; robust resolution of amyloid-related memory deficits in transgenic mice. Nat. Protoc. 1, 1671–1679 (2006).",
+        "journal-title": "Nat. Protoc."
+      },
+      {
+        "key": "275_CR60",
+        "doi-asserted-by": "publisher",
+        "first-page": "8075",
+        "DOI": "10.1523/JNEUROSCI.0864-09.2009",
+        "volume": "29",
+        "author": "D Puzzo",
+        "year": "2009",
+        "unstructured": "Puzzo, D. et al. Phosphodiesterase 5 inhibition improves synaptic function, memory, and amyloid-β load in an Alzheimer’s disease mouse model. J. Neurosci. 29, 8075–8086 (2009).",
+        "journal-title": "J. Neurosci."
+      },
+      {
+        "key": "275_CR61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/tp.2015.52",
+        "volume": "5",
+        "author": "C Madeira",
+        "year": "2015",
+        "unstructured": "Madeira, C. et al. d-serine levels in Alzheimer’s disease: implications for novel biomarker development. Transl. Psychiatry 5, e561 (2015).",
+        "journal-title": "Transl. Psychiatry"
+      },
+      {
+        "key": "275_CR62",
+        "doi-asserted-by": "publisher",
+        "first-page": "7395",
+        "DOI": "10.1074/jbc.M116.753525",
+        "volume": "292",
+        "author": "GS Seixas Da Silva",
+        "year": "2017",
+        "unstructured": "Seixas Da Silva, G. S. et al. Amyloid-β oligomers transiently inhibits AMP-activated kinase and cause metabolic defects in hippocampal neurons. J. Biol. Chem. 292, 7395–7406 (2017).",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "275_CR63",
+        "doi-asserted-by": "publisher",
+        "first-page": "775",
+        "DOI": "10.1016/j.cell.2006.06.046",
+        "volume": "126",
+        "author": "B Gong",
+        "year": "2006",
+        "unstructured": "Gong, B. et al. Ubiquitin hydrolase Uch-L1 rescues β-amyloid-induced decreases in synaptic function and contextual memory. Cell 126, 775–788 (2006).",
+        "journal-title": "Cell"
+      },
+      {
+        "key": "275_CR64",
+        "doi-asserted-by": "publisher",
+        "first-page": "11590",
+        "DOI": "10.1074/jbc.M607483200",
+        "volume": "282",
+        "author": "FG De Felice",
+        "year": "2007",
+        "unstructured": "De Felice, F. G. et al. Aβ oligomers induce neuronal oxidative stress through an N-methyl-D-aspartate receptor-dependent mechanism that is blocked by the Alzheimer drug memantine. J. Biol. Chem. 282, 11590–11601 (2007).",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "275_CR65",
+        "doi-asserted-by": "publisher",
+        "first-page": "23",
+        "DOI": "10.1111/j.1471-4159.2006.04157.x",
+        "volume": "100",
+        "author": "MP Lambert",
+        "year": "2007",
+        "unstructured": "Lambert, M. P. et al. Monoclonal antibodies that target pathological assemblies of Aβ. J. Neurochem. 100, 23–35 (2007).",
+        "journal-title": "J. Neurochem."
+      },
+      {
+        "key": "275_CR66",
+        "first-page": "36",
+        "volume": "11",
+        "author": "MD Abràmoff",
+        "year": "2004",
+        "unstructured": "Abràmoff, M. D., Magalhães, P. J. & Ram, S. J. Image processing with ImageJ. Biophotonics Int. 11, 36–42 (2004).",
+        "journal-title": "Biophotonics Int."
+      },
+      {
+        "key": "275_CR67",
+        "doi-asserted-by": "publisher",
+        "first-page": "402",
+        "DOI": "10.1006/meth.2001.1262",
+        "volume": "25",
+        "author": "KJ Livak",
+        "year": "2001",
+        "unstructured": "Livak, K. J. & Schmittgen, T. D. Analysis of relative gene expression data using real-time quantitative PCR and the 2−ΔΔC\n                           T method. Methods 25, 402–408 (2001).",
+        "journal-title": "Methods"
+      },
+      {
+        "key": "275_CR68",
+        "doi-asserted-by": "publisher",
+        "first-page": "7327",
+        "DOI": "10.1074/jbc.M116.761189",
+        "volume": "292",
+        "author": "J Brito-Moreira",
+        "year": "2017",
+        "unstructured": "Brito-Moreira, J. et al. Interaction of amyloid-β (Aβ) oligomers with neurexin 2α and neuroligin 1 mediates synapse damage and memory loss in mice. J. Biol. Chem. 292, 7327–7337 (2017).",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "275_CR69",
+        "doi-asserted-by": "publisher",
+        "first-page": "275",
+        "DOI": "10.1038/nmeth.1314",
+        "volume": "6",
+        "author": "EK Schmidt",
+        "year": "2009",
+        "unstructured": "Schmidt, E. K., Clavarino, G., Ceppi, M. & Pierre, P. SUnSET, a nonradioactive method to monitor protein synthesis. Nat. Methods 6, 275–277 (2009).",
+        "journal-title": "Nat. Methods"
+      },
+      {
+        "key": "275_CR70",
+        "doi-asserted-by": "publisher",
+        "first-page": "20488",
+        "DOI": "10.1074/jbc.M115.666156",
+        "volume": "290",
+        "author": "D Beckman",
+        "year": "2015",
+        "unstructured": "Beckman, D. et al. Prion protein modulates monoaminergic systems and depressive-like behavior in mice. J. Biol. Chem. 290, 20488–20498 (2015).",
+        "journal-title": "J. Biol. Chem."
+      }
+    ],
+    "container-title": [
+      "Nature Medicine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/s41591-018-0275-4",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/s41591-018-0275-4.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/s41591-018-0275-4.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          20
+        ]
+      ],
+      "date-time": "2023-05-20T17:58:04Z",
+      "timestamp": 1684605484000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41591-018-0275-4"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    },
+    "references-count": 70,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "275"
+    ],
+    "URL": "https://doi.org/10.1038/s41591-018-0275-4",
+    "relation": {
+      "has-review": [
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.734770984.793555019",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.734770984.793555839",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.734770984.793559343",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "1078-8956",
+      "1546-170X"
+    ],
+    "issn-type": [
+      {
+        "value": "1078-8956",
+        "type": "print"
+      },
+      {
+        "value": "1546-170X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "13 October 2016",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "2 November 2018",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "7 January 2019",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ]
+  }
+}
