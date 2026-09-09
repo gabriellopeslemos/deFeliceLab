@@ -20,9 +20,8 @@
       brandMarkAlt: "De Felice Lab circuit-brain mark",
 
       heroH1: "Shape the Future<br>of Neuroscience",
-      heroLead: "We investigate how physical exercise affects brain health at a molecular level, and how this knowledge can be applied to detect and prevent Alzheimer's disease earlier.",
-      heroCta1: 'See our research approach <span class="arrow" aria-hidden="true">→</span>',
-      heroCta2: "Join our brain health study",
+      heroLead: "We investigate how physical exercise affects brain health and how this knowledge can be applied to detect and prevent Alzheimer's disease.",
+      heroCta1: "See our research approach",
 
       cycleEyebrow: "What we do",
       cycleH2: "How we investigate Alzheimer's disease.",
@@ -208,8 +207,7 @@
 
       heroH1: "Molde o Futuro<br>da Neurociência",
       heroLead: "Investigamos como o exercício físico afeta a saúde cerebral em nível molecular, e como esse conhecimento pode ser aplicado para detectar e prevenir a doença de Alzheimer mais precocemente.",
-      heroCta1: 'Veja nossa abordagem de pesquisa <span class="arrow" aria-hidden="true">→</span>',
-      heroCta2: "Participe do nosso estudo de saúde cerebral",
+      heroCta1: "Veja nossa abordagem de pesquisa",
 
       cycleEyebrow: "O que fazemos",
       cycleH2: "Como investigamos a doença de Alzheimer.",

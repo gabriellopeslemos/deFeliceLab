@@ -1,3 +1,16 @@
+// Header background on scroll (stays transparent over the hero, gains a backdrop once scrolled)
+(function () {
+  var header = document.querySelector('.site-header');
+  if (!header) return;
+
+  function updateScrolled() {
+    header.classList.toggle('is-scrolled', window.scrollY > 8);
+  }
+
+  updateScrolled();
+  window.addEventListener('scroll', updateScrolled, { passive: true });
+})();
+
 // Mobile nav toggle
 (function () {
   var toggle = document.querySelector('.nav-toggle');
