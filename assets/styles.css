@@ -650,9 +650,13 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   color: var(--gray-500);
 }
+.pubs-filter-dropdown { position: relative; }
 .pubs-filter-select {
+  display: block;
+  width: 100%;
   appearance: none;
   -webkit-appearance: none;
+  text-align: left;
   font-family: 'Jost', sans-serif;
   font-size: 15px;
   color: var(--navy-900);
@@ -662,8 +666,49 @@ img { max-width: 100%; display: block; }
   padding: 11px 38px 11px 14px;
   min-height: 44px;
   cursor: pointer;
+  transition: border-color .15s ease;
 }
 .pubs-filter-select:hover { border-color: var(--gray-300); }
+.pubs-filter-select:focus-visible { outline: 2px solid var(--blue-500); outline-offset: 2px; }
+.pubs-filter-dropdown.open .pubs-filter-select { border-color: var(--blue-500); }
+
+/* Custom listbox menu — always opens downward (a native <select>'s open
+   direction is chosen by the browser based on viewport space, with no
+   reliable cross-browser CSS override). */
+.pubs-filter-menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 6px);
+  left: 0;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  min-width: 100%;
+  width: max-content;
+  max-width: min(360px, calc(100vw - 32px));
+  max-height: 280px;
+  overflow-y: auto;
+  background: var(--white);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  box-shadow: var(--shadow-card);
+}
+.pubs-filter-menu[hidden] { display: none; }
+.pubs-filter-option {
+  padding: 9px 12px;
+  border-radius: 6px;
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  color: var(--navy-900);
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pubs-filter-option:hover,
+.pubs-filter-option[aria-selected="true"] {
+  background: var(--blue-50);
+}
 .pubs-filter-clear {
   font-family: 'Jost', sans-serif;
   font-weight: 500;

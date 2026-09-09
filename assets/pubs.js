@@ -139,10 +139,15 @@
 
   let filterInstanceCount = 0;
 
-  // Builds the filter <fieldset>, inserted right before `list`. Each select
+  // Builds the filter <fieldset>, inserted right before `list`. Each dropdown
   // is only created when the dataset actually has at least one value for it,
   // so (for now) only Year and Journal appear — Topic will show up on its own
   // once scripts/publications-overrides.json starts tagging entries.
+  //
+  // These are custom listbox dropdowns rather than native <select> elements:
+  // a native select's open direction (up vs. down) is decided by the browser
+  // based on viewport space, with no reliable cross-browser CSS override, and
+  // the menu here must always open downward.
   function buildFilterBar(list, publications, onChange) {
     const instanceId = filterInstanceCount++;
     const filters = { year: "", journal: "", tag: "" };
@@ -168,6 +173,25 @@
     }
 
     const selects = {};
+    const closers = [];
+    const labelRefreshers = [];
+
+    function closeAllMenus(except) {
+      closers.forEach((close) => { if (close !== except) close(); });
+    }
+
+    // Keeps each dropdown's closed-state label in sync when the page language
+    // changes — the option text updates via data-i18n, but the button's own
+    // textContent (a one-time copy of it) does not update on its own.
+    document.addEventListener("click", (e) => {
+      if (e.target.closest && e.target.closest(".lang-btn")) {
+        setTimeout(() => labelRefreshers.forEach((refresh) => refresh()), 0);
+      }
+    });
+
+    document.addEventListener("pointerdown", (e) => {
+      if (!e.target.closest || !e.target.closest(".pubs-filter-dropdown")) closeAllMenus();
+    });
 
     function addSelect(key, labelKey, labelFallback, allKey, allFallback, values) {
       if (!values.length) return;
@@ -176,37 +200,132 @@
 
       const id = `pubs-filter-${key}-${instanceId}`;
       const label = document.createElement("label");
-      label.setAttribute("for", id);
+      label.id = `${id}-label`;
       label.setAttribute("data-i18n", labelKey);
       label.textContent = t(labelKey, labelFallback);
       field.appendChild(label);
 
-      const select = document.createElement("select");
-      select.id = id;
-      select.className = "pubs-filter-select";
+      const dropdown = document.createElement("div");
+      dropdown.className = "pubs-filter-dropdown";
 
-      const allOption = document.createElement("option");
-      allOption.value = "";
-      allOption.setAttribute("data-i18n", allKey);
-      allOption.textContent = t(allKey, allFallback);
-      select.appendChild(allOption);
+      const button = document.createElement("button");
+      button.type = "button";
+      button.id = id;
+      button.className = "pubs-filter-select";
+      button.setAttribute("aria-haspopup", "listbox");
+      button.setAttribute("aria-expanded", "false");
+      button.setAttribute("aria-labelledby", `${label.id} ${id}`);
 
-      values.forEach((value) => {
-        const option = document.createElement("option");
-        option.value = String(value);
-        option.textContent = String(value);
-        select.appendChild(option);
-      });
+      const menu = document.createElement("ul");
+      menu.className = "pubs-filter-menu";
+      menu.setAttribute("role", "listbox");
+      menu.id = `${id}-menu`;
+      menu.hidden = true;
+      button.setAttribute("aria-controls", menu.id);
 
-      select.addEventListener("change", () => {
-        filters[key] = select.value;
+      const options = [];
+
+      function makeOption(value, text, i18nKey) {
+        const li = document.createElement("li");
+        li.setAttribute("role", "option");
+        li.id = `${id}-opt-${options.length}`;
+        li.dataset.value = value;
+        li.className = "pubs-filter-option";
+        if (i18nKey) li.setAttribute("data-i18n", i18nKey);
+        li.textContent = text;
+        menu.appendChild(li);
+        options.push(li);
+        return li;
+      }
+
+      makeOption("", t(allKey, allFallback), allKey);
+      values.forEach((value) => makeOption(String(value), String(value)));
+
+      let highlighted = 0;
+      let current = options[0];
+
+      function selectOption(opt) {
+        current = opt;
+        highlighted = options.indexOf(opt);
+        filters[key] = opt.dataset.value;
+        button.textContent = opt.textContent;
+        options.forEach((o) => o.setAttribute("aria-selected", String(o === opt)));
+      }
+      selectOption(options[0]);
+      labelRefreshers.push(() => { button.textContent = current.textContent; });
+
+      function openMenu() {
+        closeAllMenus(closeMenu);
+        menu.hidden = false;
+        dropdown.classList.add("open");
+        button.setAttribute("aria-expanded", "true");
+        button.setAttribute("aria-activedescendant", options[highlighted].id);
+      }
+      function closeMenu(opts) {
+        if (menu.hidden) return;
+        menu.hidden = true;
+        dropdown.classList.remove("open");
+        button.setAttribute("aria-expanded", "false");
+        button.removeAttribute("aria-activedescendant");
+        if (opts && opts.focusButton) button.focus();
+      }
+      function highlightIndex(i) {
+        highlighted = Math.max(0, Math.min(options.length - 1, i));
+        button.setAttribute("aria-activedescendant", options[highlighted].id);
+      }
+      function choose(i) {
+        selectOption(options[i]);
+        closeMenu({ focusButton: true });
         updateClearVisibility();
         onChange();
+      }
+
+      button.addEventListener("click", () => {
+        if (menu.hidden) openMenu(); else closeMenu();
       });
 
-      field.appendChild(select);
+      button.addEventListener("keydown", (e) => {
+        switch (e.key) {
+          case "ArrowDown":
+            e.preventDefault();
+            if (menu.hidden) openMenu(); else highlightIndex(highlighted + 1);
+            break;
+          case "ArrowUp":
+            e.preventDefault();
+            if (menu.hidden) openMenu(); else highlightIndex(highlighted - 1);
+            break;
+          case "Home":
+            if (!menu.hidden) { e.preventDefault(); highlightIndex(0); }
+            break;
+          case "End":
+            if (!menu.hidden) { e.preventDefault(); highlightIndex(options.length - 1); }
+            break;
+          case "Enter":
+          case " ":
+            e.preventDefault();
+            if (menu.hidden) openMenu(); else choose(highlighted);
+            break;
+          case "Escape":
+            if (!menu.hidden) { e.preventDefault(); closeMenu({ focusButton: true }); }
+            break;
+          case "Tab":
+            closeMenu();
+            break;
+        }
+      });
+
+      options.forEach((opt, i) => {
+        opt.addEventListener("click", () => choose(i));
+        opt.addEventListener("pointerenter", () => highlightIndex(i));
+      });
+
+      closers.push(closeMenu);
+
+      dropdown.appendChild(button);
+      dropdown.appendChild(menu);
+      field.appendChild(dropdown);
       fieldset.appendChild(field);
-      selects[key] = select;
+      selects[key] = { reset: () => selectOption(options[0]) };
     }
 
     const years = uniqueSorted(
@@ -230,7 +349,7 @@
       filters.year = "";
       filters.journal = "";
       filters.tag = "";
-      Object.keys(selects).forEach((key) => { selects[key].value = ""; });
+      Object.keys(selects).forEach((key) => { selects[key].reset(); });
       updateClearVisibility();
       onChange();
     }
