@@ -11,6 +11,36 @@
   window.addEventListener('scroll', updateScrolled, { passive: true });
 })();
 
+// Header light/dark theme: matches whichever section sits behind the header band,
+// so nav text stays legible over both dark hero-style sections and light content sections.
+(function () {
+  var header = document.querySelector('.site-header');
+  var brandMark = document.querySelector('.brand-mark');
+  if (!header) return;
+
+  var darkSections = Array.prototype.slice.call(
+    document.querySelectorAll('.hero, .contact-section, .imaging-section, .study-hero, .page-hero')
+  );
+  if (!darkSections.length) return;
+
+  var DARK_LOGO = 'assets/logosDeFeliceLab/logoBrancaSemTexto.png';
+  var LIGHT_LOGO = 'assets/logosDeFeliceLab/logoAzulSemTexto.png';
+
+  function updateTheme() {
+    var probeY = header.getBoundingClientRect().height / 2;
+    var overDark = darkSections.some(function (section) {
+      var rect = section.getBoundingClientRect();
+      return rect.top <= probeY && rect.bottom >= probeY;
+    });
+    header.classList.toggle('is-light', !overDark);
+    if (brandMark) brandMark.src = overDark ? DARK_LOGO : LIGHT_LOGO;
+  }
+
+  updateTheme();
+  window.addEventListener('scroll', updateTheme, { passive: true });
+  window.addEventListener('resize', updateTheme);
+})();
+
 // Mobile nav toggle
 (function () {
   var toggle = document.querySelector('.nav-toggle');
