@@ -51,17 +51,16 @@
   <div class="wrap">
 
     <section class="page-hero">
-      <div class="page-hero-glow" aria-hidden="true"></div>
-      <div class="page-hero-inner">
-        <div class="hero-kicker" data-i18n="teamHeroKicker">Our lab · Canada &amp; Brazil</div>
-        <h1 data-i18n="teamHeroH1">The people behind the work.</h1>
-        <p class="page-hero-lead" data-i18n="teamHeroLead">Molecular biologists, bioinformaticians, clinicians and students spanning Kingston and Rio de Janeiro — each carrying one thread of the same question about how the brain ages.</p>
+      <div class="page-hero-inner" data-reveal-group data-reveal-step="130" data-reveal-cap="390">
+        <div class="hero-kicker reveal-card" data-i18n="teamHeroKicker">Our lab · Canada &amp; Brazil</div>
+        <h1 class="reveal-card" data-i18n="teamHeroH1">The people behind the work.</h1>
+        <p class="page-hero-lead reveal-card" data-i18n="teamHeroLead">Molecular biologists, bioinformaticians, clinicians and students spanning Kingston and Rio de Janeiro — each carrying one thread of the same question about how the brain ages.</p>
       </div>
     </section>
 
     <section id="pi" class="pi-section">
-      <div class="pi-grid">
-        <div class="pi-media">
+      <div class="pi-grid" data-reveal-group data-reveal-step="150" data-reveal-cap="300">
+        <div class="pi-media reveal-card">
           <div class="pi-portrait">
             <img src="assets/img/fernandaDeFelice.webp" alt="Fernanda G. De Felice">
           </div>
@@ -84,7 +83,7 @@
             </a>
           </div>
         </div>
-        <div class="pi-copy">
+        <div class="pi-copy reveal-card">
           <div class="eyebrow" data-i18n="piEyebrow">Principal investigator</div>
           <h2>Fernanda G. De Felice</h2>
           <p data-i18n="piBio">Dr. De Felice's research explores the interface between Alzheimer's disease and metabolism, with pioneering work on hormone signaling, insulin resistance, and inflammation in the brain. Her studies, including recent findings on the exercise hormone irisin, have shaped the understanding of how lifestyle interventions, particularly physical exercise, can help preserve brain health and delay Alzheimer's disease.</p>
@@ -114,12 +113,12 @@
     <section class="section container team-teams">
 
       <div class="team-team" style="--team-accent: var(--cyan-strong)">
-        <div class="team-team-label">
+        <div class="team-team-label reveal-card">
           <span class="team-team-index">01</span>
           <h2 class="team-team-name" data-i18n="teamGroupBiomarkers">Biomarkers</h2>
           <p class="team-team-desc" data-i18n="teamGroupBiomarkersDesc">Reading brain state from a blood draw, without imaging.</p>
         </div>
-        <div class="team-grid">
+        <div class="team-grid" data-reveal-group>
           <article class="team-card reveal-card">
             <div class="team-avatar"><img src="assets/img/luisEduardo.webp" alt="Dr. Luis Eduardo Santos" loading="lazy"></div>
             <div class="team-card-caption">
@@ -257,12 +256,12 @@
       </div>
 
       <div class="team-team" style="--team-accent: var(--magenta-strong)">
-        <div class="team-team-label">
+        <div class="team-team-label reveal-card">
           <span class="team-team-index">02</span>
           <h2 class="team-team-name" data-i18n="teamGroupExerkines">Exerkines</h2>
           <p class="team-team-desc" data-i18n="teamGroupExerkinesDesc">How movement remodels neuronal signalling and protects the brain.</p>
         </div>
-        <div class="team-grid">
+        <div class="team-grid" data-reveal-group>
           <article class="team-card reveal-card">
             <div class="team-avatar"><img src="assets/img/thaynaRody.webp" alt="Tayná Rody" loading="lazy"></div>
             <div class="team-card-caption">
@@ -337,12 +336,12 @@
       </div>
 
       <div class="team-team" style="--team-accent: var(--violet)">
-        <div class="team-team-label">
+        <div class="team-team-label reveal-card">
           <span class="team-team-index">03</span>
           <h2 class="team-team-name" data-i18n="teamGroupCrispr">CRISPR</h2>
           <p class="team-team-desc" data-i18n="teamGroupCrisprDesc">Editing the target gene to prove causality at the source.</p>
         </div>
-        <div class="team-grid">
+        <div class="team-grid" data-reveal-group>
           <article class="team-card reveal-card">
             <div class="team-avatar"><img src="assets/img/thyagoCalvo.webp" alt="Dr. Thyago Leal" loading="lazy"></div>
             <div class="team-card-caption">
@@ -411,7 +410,7 @@
   </div>
 </main>
 
-<script src="assets/team-reveal.js" defer></script>
+<script src="assets/scroll-reveal.js" defer></script>
 <script src="assets/i18n.js" defer></script>
 <script src="assets/nav.js" defer></script>
 </body>

@@ -134,7 +134,7 @@
       teamPageMetaDescription: "The people of the De Felice Lab — the principal investigator, research associates, postdoctoral fellows, and graduate and undergraduate students studying neurodegeneration across Canada and Brazil.",
       teamHeroKicker: "Our lab · Canada &amp; Brazil",
       teamHeroH1: "The people behind the work.",
-      teamHeroLead: "Molecular biologists, bioinformaticians, clinicians and students spanning Kingston and Rio de Janeiro — each carrying one thread of the same question about how the brain ages.",
+      teamHeroLead: "Our team brings together neuroscientists from Kingston, Rio de Janeiro, and São Paulo, with each member specializing in one of our three research branches.",
 
       piEyebrow: "Principal investigator",
       piPortraitNote: "Portrait placeholder",
@@ -318,7 +318,7 @@
       teamPageMetaDescription: "As pessoas do De Felice Lab — a pesquisadora principal, associados de pesquisa, pós-doutorandos e estudantes de graduação e pós-graduação que estudam neurodegeneração no Canadá e no Brasil.",
       teamHeroKicker: "Nosso laboratório · Canadá e Brasil",
       teamHeroH1: "As pessoas por trás do trabalho.",
-      teamHeroLead: "Biólogos moleculares, bioinformatas, clínicos e estudantes espalhados entre Kingston e o Rio de Janeiro — cada um carregando um fio da mesma pergunta sobre como o cérebro envelhece.",
+      teamHeroLead: "Nossa equipe reúne neurocientistas de Kingston, Rio de Janeiro e São Paulo, cada um especializado em uma de nossas três linhas de pesquisa.",
 
       piEyebrow: "Pesquisadora principal",
       piPortraitNote: "Placeholder de retrato",

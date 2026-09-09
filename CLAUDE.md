@@ -41,7 +41,7 @@ python scripts/fetch_orcid_publications.py
 
 **Other JS modules** (`assets/`, all vanilla, no build step, loaded via `<script defer>`):
 - `nav.js` — mobile nav toggle (hamburger, Escape-to-close, closes on resize past breakpoint).
-- `team-reveal.js` — IntersectionObserver-based scroll-in stagger animation for `.reveal-card` elements on `team.html`, grouped/staggered per `.team-grid`; skips straight to visible when `prefers-reduced-motion` or no `IntersectionObserver` support.
+- `scroll-reveal.js` — IntersectionObserver-based scroll-in stagger animation for `.reveal-card` elements, used on `index.html` (`.cycle-card`), `study.html` (`.involves-card`) and `team.html` (`.team-card`); stagger groups by the nearest ancestor marked `data-reveal-group`; skips straight to visible when `prefers-reduced-motion` or no `IntersectionObserver` support.
 
 **Images**: `scripts/optimize_images.py` is a one-off (not pipeline) Pillow script that resizes/re-encodes named team photos and funder logos to WebP at fixed max widths/quality. Run manually when adding new large source images; it is not invoked automatically.
 
