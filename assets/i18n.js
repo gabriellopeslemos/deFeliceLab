@@ -187,9 +187,7 @@
       team14Focus: "Biochemical mechanisms linking obesity to memory and cognition.",
       team15Focus: "Measuring irisin protein concentration in patient samples.",
       team16Focus: "Extracellular vesicles and FNDC5/irisin in Alzheimer's mouse models.",
-      team17Focus: "Therapeutic potential of mesenchymal-cell-derived extracellular vesicles.",
-
-      teamPlaceholderNote: "Portrait placeholders — pending real team photos with descriptive alt text."
+      team17Focus: "Therapeutic potential of mesenchymal-cell-derived extracellular vesicles."
     },
 
     pt: {
@@ -373,9 +371,7 @@
       team14Focus: "Mecanismos bioquímicos que ligam a obesidade à memória e à cognição.",
       team15Focus: "Medição da concentração da proteína irisina em amostras de pacientes.",
       team16Focus: "Vesículas extracelulares e FNDC5/irisina em modelos murinos de Alzheimer.",
-      team17Focus: "Potencial terapêutico de vesículas extracelulares derivadas de células mesenquimais.",
-
-      teamPlaceholderNote: "Placeholders de retrato — aguardando fotos reais da equipe com texto alternativo descritivo."
+      team17Focus: "Potencial terapêutico de vesículas extracelulares derivadas de células mesenquimais."
     }
   };
 
